@@ -1,0 +1,64 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "17.0.8.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 0
+			} ) {
+				name: "panel2"
+				add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+					name: "toolBar1"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "信号组"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openSignelGroupView", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+						"text": "显示值"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "tragelShowValue", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"text": "曲线颜色"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectChartColor", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "toggleButton1"
+					"text": "完全模式"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "toggleButton1", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "停止"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startOrStopDraw", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "拉齐时间轴"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "toOneTime", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "First"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "panel"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 1
+				} ) {
+					name: "mainPanel"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 755, 450 )
+		} )
+	}
+}

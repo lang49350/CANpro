@@ -1,0 +1,53 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "17.0.8.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 4
+				"hgap": 20
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addBtn"
+					"text": "新增"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBtnHandler", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "editBtn"
+					"text": "保存修改"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editBtnHandler", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "delBtn"
+					"text": "删除"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delBtnHandler", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "enableBtn"
+					"text": "切换有效状态"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "enableBtnHandler", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector )
+						add( new java.util.Vector )
+					}, new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 670, 460 )
+		} )
+	}
+}

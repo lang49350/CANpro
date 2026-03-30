@@ -1,0 +1,15 @@
+{
+    "tab0": {
+        "dbcFile": "",
+        "j1939DA": "FF",
+        "j1939SA": "00",
+        "msgList": [
+        ],
+        "protocol": 0,
+        "sendLoopCnt": 1,
+        "sendLoopInterval": 1000,
+        "sendMode": 0,
+        "sendSpeed": 6,
+        "transFailMode": 0
+    }
+}

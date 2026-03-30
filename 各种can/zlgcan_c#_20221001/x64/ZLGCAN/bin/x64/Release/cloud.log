@@ -1,0 +1,186 @@
+[2022-03-08 13:20:10] ================= Logging =================
+[2022-03-08 13:20:10] Disconnect server ...
+[2022-03-08 13:20:10]  logout...
+[2022-03-08 13:20:14] logout_on_body: offset=0, size=226, content=226
+[2022-03-08 13:20:14] logout_on_body: {"result":false,"message":"Unauthorized","jwt":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDY3MTY4MTMsImlzc3VlciI6Imh0dHBzOi8vd3d3LnpsZ2Nsb3VkLmNvbSIsImV4cCI6MTY0NzU4MDgxM30.l22qqWM5UsyA62BpCUNirMWdioQf0jgzshRH6crFcIY"}
+[2022-03-08 13:20:52] ================= Logging =================
+[2022-03-08 13:20:52] Disconnect server ...
+[2022-03-08 13:20:52]  logout...
+[2022-05-10 13:10:25] ================= Logging =================
+[2022-05-10 13:10:25] Disconnect server ...
+[2022-05-10 13:10:25]  logout...
+[2022-05-10 13:10:29] logout_on_body: offset=0, size=226, content=226
+[2022-05-10 13:10:29] logout_on_body: {"result":false,"message":"Unauthorized","jwt":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTIxNTk0MjksImlzc3VlciI6Imh0dHBzOi8vd3d3LnpsZ2Nsb3VkLmNvbSIsImV4cCI6MTY1MzAyMzQyOX0.JtidAWvjTUxHR6W3N_g5vfiJWxQrVnSjITvV099Vh8w"}
+[2022-05-17 11:39:09] ================= Logging =================
+[2022-05-17 11:39:09] Disconnect server ...
+[2022-05-17 11:39:09]  logout...
+[2022-07-19 17:23:34] ================= Logging =================
+[2022-07-19 17:23:34] Connect server can.zlgcloud.com:443, can.zlgcloud.com:8143
+[2022-07-19 17:23:34] 123456 login...
+[2022-07-19 17:23:34] login_on_body: offset=0, size=225, content=225
+[2022-07-19 17:23:34] login_on_body: {"result":false,"message":"Bad Request","jwt":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTgyMjI2MTQsImlzc3VlciI6Imh0dHBzOi8vd3d3LnpsZ2Nsb3VkLmNvbSIsImV4cCI6MTY1OTA4NjYxNH0.4yIwBPLWoEZkGvvmJd1WcH6Y7ugyPmO2RW8Qf4s_4xg"}
+[2022-07-19 17:23:46] Connect server can.zlgcloud.com:443, can.zlgcloud.com:8143
+[2022-07-19 17:23:46] 123456 login...
+[2022-07-19 17:23:46] login_on_body: offset=0, size=1204, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=1204, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=3251, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=5298, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=7345, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=9392, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=11439, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=13486, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=15533, size=8, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=15541, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=17588, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=19635, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=21682, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=23729, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=25776, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=27823, size=2047, content=31641
+[2022-07-19 17:23:46] login_on_body: offset=29870, size=1771, content=31641
+[2022-07-19 17:23:46] login_on_body: {"result":true,"message":"OK","data":{"username":"123456","mobile":"15522376856","role":0,"register_time":1560155219,"last_login_time":1655188793,"password_changed_time":1560155219,"register_ip":"::ffff:125.38.30.148","last_login_ip":"119.130.128.23","status":"normal","language":"zh","nickname":"123456","dev_extra":{"data_expire":5,"data_capacity":2048,"data_size":133.953125,"update_time":1658221201,"devtype_capacity":10,"dev_capacity":1,"dev_connect_capacity":1,"dev_transmit_capacity":1},"userid":"5cfe145363d43c000602157b","uri":"/v1/users/123456","device_types":[{"devtype":"candtu-200","basetype":"candtu-200","enable_secret":false,"schema":{"memo":{"desc":{"nickname":"备注","comment":"两路CAN-bus数据记录仪","maxLength":1024,"type":"string"},"devname":{"nickname":"设备名称","comment":"设备名称","maxLength":31,"minLength":1,"type":"string"},"devclass":{"nickname":"设备分类","type":"number","enums":[0,1,2,3],"min":0,"max":0,"autoGen":true,"readonly":true,"comment":"设备分类，包括默认设备(0)，通用网关(1)，LoraWan节点(2),LoraWan网关(3);此处必须为2，即LoraWan节点"},"devid":{"type":"string","readonly":true,"required":true,"minLength":2,"maxLength":32,"comment":"设备id，2-64位字母、数字、连接号、下划线的组合","nickname":"设备地址"},"devtype":{"type":"string","readonly":true,"required":true,"minLength":2,"maxLength":32,"comment":"设备类型，2-64位字母、数字、连接号、下划线的组合","nickname":"设备类型"},"devsecret":{"type":"string","comment":"设备密钥，32位的uuid，用于设备登录auth服务器","nickname":"设备密钥"},"devprotocol":{"type":"number","enums":[0,1],"autoGen":true,"readonly":true,"comment":"通信协议(同时对应了解析数据的协议)，包括默认协议(0)，Modbus(1);该字段为空时，为默认协议(即mqtt协议)","nickname":"通信协议"},"country":{"comment":"设备所在国家","maxLength":64,"type":"string","nickname":"设备所在国家"},"region":{"comment":...
+[2022-07-19 17:23:46] login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI1Y2ZlMTQ1MzYzZDQzYzAwMDYwMjE1N2IiLCJyb2xlIjowLCJ1c2VybmFtZSI6IjEyMzQ1NiIsIm1vYmlsZSI6IjE1NTIyMzc2ODU2IiwiZGV2X2V4dHJhIjp7ImRhdGFfZXhwaXJlIjo1LCJkYXRhX2NhcGFjaXR5IjoyMDQ4LCJkYXRhX3NpemUiOjEzMy45NTMxMjUsInVwZGF0ZV90aW1lIjoxNjU4MjIxMjAxLCJkZXZ0eXBlX2NhcGFjaXR5IjoxMCwiZGV2X2NhcGFjaXR5IjoxLCJkZXZfY29ubmVjdF9jYXBhY2l0eSI6MSwiZGV2X3RyYW5zbWl0X2NhcGFjaXR5IjoxfSwiaWF0IjoxNjU4MjIyNjI1LCJpc3N1ZXIiOiJodHRwczovL3d3dy56bGdjbG91ZC5jb20iLCJleHAiOjE2NTkwODY2MjV9.CSza6Z9P2aNGkHQos4x_T1uoYtij50w_AZMZ4DvJeKo
+[2022-07-19 17:23:46] login success.
+[2022-07-19 17:23:46] Query devices ...
+[2022-07-19 17:23:46] query_devices_on_body: offset=0, size=1205, content=3513
+[2022-07-19 17:23:46] query_devices_on_body: offset=1205, size=2047, content=3513
+[2022-07-19 17:23:46] query_devices_on_body: offset=3252, size=261, content=3513
+[2022-07-19 17:23:46] query_devices_on_body: {"result":true,"message":"OK","data":[{"devid":"B0039E2865DFD4A11B13","devtype":"candtu-200","owner":"123456","devclass":0,"status":1,"devprotocol":0,"data_extra":{"data_size":133.88671875,"update_time":1658221201},"registertime":1567508200,"onlinetime":1658208954,"offlinetime":1658211292,"devname":"CANDTU-200UWGR","FwVer":"V3.33","HwVer":"V1.03","Serial":"D4A11B13","model":"CANDTU-200UWGR","time":1658208954389,"currentfm":{"version":"3.33"},"SDStat":2,"CfgInfo":{"CAN":{"CAN0":{"Chn":0,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":5,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0}]},"CAN1":{"Chn":1,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":11,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":2147483646,"Acc":1509772850},{"Mask":2147483646,"Acc":1509828584},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262}]}},"DO":{"DO0":{"Chn":0,"Enable":1,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Output":1}},"GPSRec":{"Enable":1,"Type":0,"Period":1},"LIN":{"LIN0":{"Chn":0,"Enable":0,"Baud":9600,"DataLen":8}},"Net":{"Net0":{"Chn":0,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080},"Net1":{"Chn":1,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080},"Net2":{"Chn":2,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080}},"NetGen":{"Times":0,"NetLogEn":0,"Proto":0,"SendIdEn":1},"Quota":{"CAN0":45,"CAN1":45,"LIN0":0,"DI0":0,"GPS":10},"RecCfg":{"RecFullHdl":0,"RecFSize":10,"RecMer":0,"RecErr":1},"SMS":{"SMS0":{"Chn":0,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Num":"13800138000"},"SMS1":{"Chn":1,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Num":"13800138000"},"SMS2":{"Chn":2,"Enable":0,"Func":1,"InOut"...
+[2022-07-19 17:23:46] Device candtu-200 B0039E2865DFD4A11B13.
+[2022-07-19 17:23:46] mqtt connecting...
+[2022-07-19 17:23:46] mqtt connect success.
+[2022-07-19 17:23:46] Query devices ...
+[2022-07-19 17:23:47] query_devices_on_body: offset=0, size=1205, content=3513
+[2022-07-19 17:23:47] query_devices_on_body: offset=1205, size=2047, content=3513
+[2022-07-19 17:23:47] query_devices_on_body: offset=3252, size=261, content=3513
+[2022-07-19 17:23:47] query_devices_on_body: {"result":true,"message":"OK","data":[{"devid":"B0039E2865DFD4A11B13","devtype":"candtu-200","owner":"123456","devclass":0,"status":1,"devprotocol":0,"data_extra":{"data_size":133.88671875,"update_time":1658221201},"registertime":1567508200,"onlinetime":1658208954,"offlinetime":1658211292,"devname":"CANDTU-200UWGR","FwVer":"V3.33","HwVer":"V1.03","Serial":"D4A11B13","model":"CANDTU-200UWGR","time":1658208954389,"currentfm":{"version":"3.33"},"SDStat":2,"CfgInfo":{"CAN":{"CAN0":{"Chn":0,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":5,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0}]},"CAN1":{"Chn":1,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":11,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":2147483646,"Acc":1509772850},{"Mask":2147483646,"Acc":1509828584},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262}]}},"DO":{"DO0":{"Chn":0,"Enable":1,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Output":1}},"GPSRec":{"Enable":1,"Type":0,"Period":1},"LIN":{"LIN0":{"Chn":0,"Enable":0,"Baud":9600,"DataLen":8}},"Net":{"Net0":{"Chn":0,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080},"Net1":{"Chn":1,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080},"Net2":{"Chn":2,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080}},"NetGen":{"Times":0,"NetLogEn":0,"Proto":0,"SendIdEn":1},"Quota":{"CAN0":45,"CAN1":45,"LIN0":0,"DI0":0,"GPS":10},"RecCfg":{"RecFullHdl":0,"RecFSize":10,"RecMer":0,"RecErr":1},"SMS":{"SMS0":{"Chn":0,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Num":"13800138000"},"SMS1":{"Chn":1,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Num":"13800138000"},"SMS2":{"Chn":2,"Enable":0,"Func":1,"InOut"...
+[2022-07-19 17:23:47] Device candtu-200 B0039E2865DFD4A11B13.
+[2022-07-19 17:24:25] ================= Logging =================
+[2022-07-19 17:24:25] Connect server can.zlgcloud.com:443, can.zlgcloud.com:8143
+[2022-07-19 17:24:25] 123456 login...
+[2022-07-19 17:24:25] login_on_body: offset=0, size=1204, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=1204, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=3251, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=5298, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=7345, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=9392, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=11439, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=13486, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=15533, size=8, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=15541, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=17588, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=19635, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=21682, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=23729, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=25776, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=27823, size=2047, content=31641
+[2022-07-19 17:24:25] login_on_body: offset=29870, size=1771, content=31641
+[2022-07-19 17:24:25] login_on_body: {"result":true,"message":"OK","data":{"username":"123456","mobile":"15522376856","role":0,"register_time":1560155219,"last_login_time":1658222625,"password_changed_time":1560155219,"register_ip":"::ffff:125.38.30.148","last_login_ip":"61.140.180.235","status":"normal","language":"zh","nickname":"123456","dev_extra":{"data_expire":5,"data_capacity":2048,"data_size":133.953125,"update_time":1658221201,"devtype_capacity":10,"dev_capacity":1,"dev_connect_capacity":1,"dev_transmit_capacity":1},"userid":"5cfe145363d43c000602157b","uri":"/v1/users/123456","device_types":[{"devtype":"candtu-200","basetype":"candtu-200","enable_secret":false,"schema":{"memo":{"desc":{"nickname":"备注","comment":"两路CAN-bus数据记录仪","maxLength":1024,"type":"string"},"devname":{"nickname":"设备名称","comment":"设备名称","maxLength":31,"minLength":1,"type":"string"},"devclass":{"nickname":"设备分类","type":"number","enums":[0,1,2,3],"min":0,"max":0,"autoGen":true,"readonly":true,"comment":"设备分类，包括默认设备(0)，通用网关(1)，LoraWan节点(2),LoraWan网关(3);此处必须为2，即LoraWan节点"},"devid":{"type":"string","readonly":true,"required":true,"minLength":2,"maxLength":32,"comment":"设备id，2-64位字母、数字、连接号、下划线的组合","nickname":"设备地址"},"devtype":{"type":"string","readonly":true,"required":true,"minLength":2,"maxLength":32,"comment":"设备类型，2-64位字母、数字、连接号、下划线的组合","nickname":"设备类型"},"devsecret":{"type":"string","comment":"设备密钥，32位的uuid，用于设备登录auth服务器","nickname":"设备密钥"},"devprotocol":{"type":"number","enums":[0,1],"autoGen":true,"readonly":true,"comment":"通信协议(同时对应了解析数据的协议)，包括默认协议(0)，Modbus(1);该字段为空时，为默认协议(即mqtt协议)","nickname":"通信协议"},"country":{"comment":"设备所在国家","maxLength":64,"type":"string","nickname":"设备所在国家"},"region":{"comment":...
+[2022-07-19 17:24:25] login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI1Y2ZlMTQ1MzYzZDQzYzAwMDYwMjE1N2IiLCJyb2xlIjowLCJ1c2VybmFtZSI6IjEyMzQ1NiIsIm1vYmlsZSI6IjE1NTIyMzc2ODU2IiwiZGV2X2V4dHJhIjp7ImRhdGFfZXhwaXJlIjo1LCJkYXRhX2NhcGFjaXR5IjoyMDQ4LCJkYXRhX3NpemUiOjEzMy45NTMxMjUsInVwZGF0ZV90aW1lIjoxNjU4MjIxMjAxLCJkZXZ0eXBlX2NhcGFjaXR5IjoxMCwiZGV2X2NhcGFjaXR5IjoxLCJkZXZfY29ubmVjdF9jYXBhY2l0eSI6MSwiZGV2X3RyYW5zbWl0X2NhcGFjaXR5IjoxfSwiaWF0IjoxNjU4MjIyNjY1LCJpc3N1ZXIiOiJodHRwczovL3d3dy56bGdjbG91ZC5jb20iLCJleHAiOjE2NTkwODY2NjV9.-Uhwy8qK2O5leTCCClVP3V92GLRsKV6pEGd9chzlyZ0
+[2022-07-19 17:24:25] login success.
+[2022-07-19 17:24:25] Query devices ...
+[2022-07-19 17:24:25] query_devices_on_body: offset=0, size=1205, content=3513
+[2022-07-19 17:24:25] query_devices_on_body: offset=1205, size=2047, content=3513
+[2022-07-19 17:24:25] query_devices_on_body: offset=3252, size=261, content=3513
+[2022-07-19 17:24:25] query_devices_on_body: {"result":true,"message":"OK","data":[{"devid":"B0039E2865DFD4A11B13","devtype":"candtu-200","owner":"123456","devclass":0,"status":1,"devprotocol":0,"data_extra":{"data_size":133.88671875,"update_time":1658221201},"registertime":1567508200,"onlinetime":1658208954,"offlinetime":1658211292,"devname":"CANDTU-200UWGR","FwVer":"V3.33","HwVer":"V1.03","Serial":"D4A11B13","model":"CANDTU-200UWGR","time":1658208954389,"currentfm":{"version":"3.33"},"SDStat":2,"CfgInfo":{"CAN":{"CAN0":{"Chn":0,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":5,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0}]},"CAN1":{"Chn":1,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":11,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":2147483646,"Acc":1509772850},{"Mask":2147483646,"Acc":1509828584},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262}]}},"DO":{"DO0":{"Chn":0,"Enable":1,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Output":1}},"GPSRec":{"Enable":1,"Type":0,"Period":1},"LIN":{"LIN0":{"Chn":0,"Enable":0,"Baud":9600,"DataLen":8}},"Net":{"Net0":{"Chn":0,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080},"Net1":{"Chn":1,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080},"Net2":{"Chn":2,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080}},"NetGen":{"Times":0,"NetLogEn":0,"Proto":0,"SendIdEn":1},"Quota":{"CAN0":45,"CAN1":45,"LIN0":0,"DI0":0,"GPS":10},"RecCfg":{"RecFullHdl":0,"RecFSize":10,"RecMer":0,"RecErr":1},"SMS":{"SMS0":{"Chn":0,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Num":"13800138000"},"SMS1":{"Chn":1,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Num":"13800138000"},"SMS2":{"Chn":2,"Enable":0,"Func":1,"InOut"...
+[2022-07-19 17:24:25] Device candtu-200 B0039E2865DFD4A11B13.
+[2022-07-19 17:24:25] mqtt connecting...
+[2022-07-19 17:24:25] mqtt connect success.
+[2022-07-19 17:24:25] Query devices ...
+[2022-07-19 17:24:26] query_devices_on_body: offset=0, size=1205, content=3513
+[2022-07-19 17:24:26] query_devices_on_body: offset=1205, size=2047, content=3513
+[2022-07-19 17:24:26] query_devices_on_body: offset=3252, size=261, content=3513
+[2022-07-19 17:24:26] query_devices_on_body: {"result":true,"message":"OK","data":[{"devid":"B0039E2865DFD4A11B13","devtype":"candtu-200","owner":"123456","devclass":0,"status":1,"devprotocol":0,"data_extra":{"data_size":133.88671875,"update_time":1658221201},"registertime":1567508200,"onlinetime":1658208954,"offlinetime":1658211292,"devname":"CANDTU-200UWGR","FwVer":"V3.33","HwVer":"V1.03","Serial":"D4A11B13","model":"CANDTU-200UWGR","time":1658208954389,"currentfm":{"version":"3.33"},"SDStat":2,"CfgInfo":{"CAN":{"CAN0":{"Chn":0,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":5,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0}]},"CAN1":{"Chn":1,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":11,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":2147483646,"Acc":1509772850},{"Mask":2147483646,"Acc":1509828584},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262},{"Mask":2147483646,"Acc":1882956262}]}},"DO":{"DO0":{"Chn":0,"Enable":1,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Output":1}},"GPSRec":{"Enable":1,"Type":0,"Period":1},"LIN":{"LIN0":{"Chn":0,"Enable":0,"Baud":9600,"DataLen":8}},"Net":{"Net0":{"Chn":0,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080},"Net1":{"Chn":1,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080},"Net2":{"Chn":2,"Enable":0,"Proto":1,"LPort":1080,"RAddr":"","RPort":8080}},"NetGen":{"Times":0,"NetLogEn":0,"Proto":0,"SendIdEn":1},"Quota":{"CAN0":45,"CAN1":45,"LIN0":0,"DI0":0,"GPS":10},"RecCfg":{"RecFullHdl":0,"RecFSize":10,"RecMer":0,"RecErr":1},"SMS":{"SMS0":{"Chn":0,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Num":"13800138000"},"SMS1":{"Chn":1,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":500,"Num":"13800138000"},"SMS2":{"Chn":2,"Enable":0,"Func":1,"InOut"...
+[2022-07-19 17:24:26] Device candtu-200 B0039E2865DFD4A11B13.
+[2022-07-19 17:25:34] Disconnect server ...
+[2022-07-19 17:25:34] mqtt loop exit.
+[2022-07-19 17:25:34] mqtt disconnecting...
+[2022-07-19 17:25:34] mqtt disconnected.
+[2022-07-19 17:25:34] 123456 logout...
+[2022-07-19 17:25:35] logout_on_body: offset=0, size=215, content=215
+[2022-07-19 17:25:35] logout_on_body: {"result":true,"message":"OK","jwt":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTgyMjI3MzQsImlzc3VlciI6Imh0dHBzOi8vd3d3LnpsZ2Nsb3VkLmNvbSIsImV4cCI6MTY1OTA4NjczNH0.hd3Eusu4fxdm4TOBxGePF1S6FbpLpQGI6Iq2aiM7EpM"}
+[2022-07-19 17:26:13] Connect server can.zlgcloud.com:443, can.zlgcloud.com:8143
+[2022-07-19 17:26:13] SANY_H login...
+[2022-07-19 17:26:13] login_on_body: offset=0, size=1194, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=1194, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=3241, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=5288, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=7335, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=9382, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=11429, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=13476, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=15523, size=8, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=15531, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=17578, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=19625, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=21672, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=23719, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=25766, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=27813, size=2047, content=31712
+[2022-07-19 17:26:13] login_on_body: offset=29860, size=1852, content=31712
+[2022-07-19 17:26:13] login_on_body: {"result":true,"message":"OK","data":{"username":"SANY_H","mobile":"13543065731","role":0,"register_time":1602665360,"last_login_time":1658194192,"password_changed_time":1620789543,"register_ip":"222.240.233.66","last_login_ip":"61.50.124.170","dev_extra":{"data_expire":30,"data_capacity":10240,"data_size":10398.984375,"update_time":1658221210,"devtype_capacity":10,"dev_capacity":10,"dev_connect_capacity":10,"dev_transmit_capacity":10},"status":"normal","language":"zh","nickname":"SANY_H","userid":"5f86bb90264c183d3a575c86","uri":"/v1/users/SANY_H","device_types":[{"devtype":"candtu-200","basetype":"candtu-200","enable_secret":false,"schema":{"memo":{"desc":{"nickname":"备注","comment":"两路CAN-bus数据记录仪","maxLength":1024,"type":"string"},"devname":{"nickname":"设备名称","comment":"设备名称","maxLength":31,"minLength":1,"type":"string"},"devclass":{"nickname":"设备分类","type":"number","enums":[0,1,2,3],"min":0,"max":0,"autoGen":true,"readonly":true,"comment":"设备分类，包括默认设备(0)，通用网关(1)，LoraWan节点(2),LoraWan网关(3);此处必须为2，即LoraWan节点"},"devid":{"type":"string","readonly":true,"required":true,"minLength":2,"maxLength":32,"comment":"设备id，2-64位字母、数字、连接号、下划线的组合","nickname":"设备地址"},"devtype":{"type":"string","readonly":true,"required":true,"minLength":2,"maxLength":32,"comment":"设备类型，2-64位字母、数字、连接号、下划线的组合","nickname":"设备类型"},"devsecret":{"type":"string","comment":"设备密钥，32位的uuid，用于设备登录auth服务器","nickname":"设备密钥"},"devprotocol":{"type":"number","enums":[0,1],"autoGen":true,"readonly":true,"comment":"通信协议(同时对应了解析数据的协议)，包括默认协议(0)，Modbus(1);该字段为空时，为默认协议(即mqtt协议)","nickname":"通信协议"},"country":{"comment":"设备所在国家","maxLength":64,"type":"string","nickname":"设备所在国家"},"region":{"comment":...
+[2022-07-19 17:26:13] login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI1Zjg2YmI5MDI2NGMxODNkM2E1NzVjODYiLCJyb2xlIjowLCJ1c2VybmFtZSI6IlNBTllfSCIsIm1vYmlsZSI6IjEzNTQzMDY1NzMxIiwiZGV2X2V4dHJhIjp7ImRhdGFfZXhwaXJlIjozMCwiZGF0YV9jYXBhY2l0eSI6MTAyNDAsImRhdGFfc2l6ZSI6MTAzOTguOTg0Mzc1LCJ1cGRhdGVfdGltZSI6MTY1ODIyMTIxMCwiZGV2dHlwZV9jYXBhY2l0eSI6MTAsImRldl9jYXBhY2l0eSI6MTAsImRldl9jb25uZWN0X2NhcGFjaXR5IjoxMCwiZGV2X3RyYW5zbWl0X2NhcGFjaXR5IjoxMH0sImlhdCI6MTY1ODIyMjc3MiwiaXNzdWVyIjoiaHR0cHM6Ly93d3cuemxnY2xvdWQuY29tIiwiZXhwIjoxNjU5MDg2NzcyfQ.xmM2mr0svZIMnO6y4uIl5a6dc9dQ3v7dlGiA7v6_N90
+[2022-07-19 17:26:13] login success.
+[2022-07-19 17:26:13] Query devices ...
+[2022-07-19 17:26:13] query_devices_on_body: offset=0, size=1194, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=1194, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=3241, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=5288, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=7335, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=9382, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=11429, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=13476, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=15523, size=8, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=15531, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=17578, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=19625, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=21672, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=23719, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=25766, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=27813, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=29860, size=1633, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: {"result":true,"message":"OK","data":[{"devid":"DE03D7B0DFD1D481311E","devtype":"candtu-200","owner":"SANY_H","devclass":0,"status":1,"devprotocol":0,"data_extra":{"data_size":1752.32421875,"update_time":1658221209},"registertime":1629425963,"onlinetime":1658211086,"offlinetime":1658211446,"devname":"CANDTU_Rizhao_28","FwVer":"V3.36","HwVer":"V1.03","Serial":"D481311E","isodate":1658211087504,"model":"CANDTU-200UWGR","time":1658211087504,"currentfm":{"version":"3.36"},"CfgInfo":{"CAN":{"CAN1":{"Chn":1,"Enable":0,"ResEn":1,"Mode":0,"BpsBrp":11,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0}]},"CAN0":{"Chn":0,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":11,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":2147483136,"Acc":1879703552},{"Mask":2013265920,"Acc":134217728},{"Mask":2147483646,"Acc":1507854336},{"Mask":2147483136,"Acc":1912598528},{"Mask":2147483646,"Acc":1912464384},{"Mask":2147483646,"Acc":1912459776},{"Mask":2147483646,"Acc":1507853824},{"Mask":2147483646,"Acc":1912462336}]}},"IotEn":{"CAN0":1,"CAN1":1,"LIN0":0,"DI0":0,"GPS":0},"Quota":{"CAN0":100,"CAN1":0,"LIN0":0,"DI0":0,"GPS":0},"DI":{"DI0":{"Chn":0,"Enable":0,"Func":0,"Interval":0}},"DO":{"DO0":{"Chn":0,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":50,"Output":1}},"GPSRec":{"Enable":0,"Type":0,"Period":1},"LIN":{"LIN0":{"Chn":0,"Enable":0,"Baud":20000,"DataLen":8}},"Net":{"Net0":{"Chn":0,"Enable":1,"Proto":1,"LPort":1080,"RAddr":"streamSet.sany.com.cn","RPort":55572},"Net1":{"Chn":1,"Enable":1,"Proto":1,"LPort":1081,"RAddr":"streamSet.sany.com.cn","RPort":55567},"Net2":{"Chn":2,"Enable":0,"Proto":1,"LPort":1082,"RAddr":"streamSet.sany.com.cn","RPort":55567}},"NetFlt":{"Enable":0,"FltNum":0},"NetGen":{"Times":0,"NetLogEn":0,"Proto":0,"SendIdEn":1},"RecCfg":{"RecFullHdl":0,"RecFSize":10,"RecMer":0,"RecErr":1},"SMS":{"SMS0":{"Chn":...
+[2022-07-19 17:26:13] Device candtu-200 DE03D7B0DFD1D481311E.
+[2022-07-19 17:26:13] Device candtu-200 AA03B98FE0D1D4B12504.
+[2022-07-19 17:26:13] Device candtu-200 A603B98FE0D1D4B11F06.
+[2022-07-19 17:26:13] Device candtu-200 9503B98FE0D1D4A10C18.
+[2022-07-19 17:26:13] Device candtu-200 340370D4E1D1D441071F.
+[2022-07-19 17:26:13] Device candtu-200 0103768FE2D1D4491316.
+[2022-07-19 17:26:13] Device candtu-200 9B03B98FE0D1D4B11703.
+[2022-07-19 17:26:13] Device candtu-200 2003768FE2D1D4493315.
+[2022-07-19 17:26:13] Device candtu-200 9603B98FE0D1D4990B22.
+[2022-07-19 17:26:13] Device candtu-200 B503B98FE0D1D4A12B19.
+[2022-07-19 17:26:13] mqtt connecting...
+[2022-07-19 17:26:13] mqtt connect success.
+[2022-07-19 17:26:13] Query devices ...
+[2022-07-19 17:26:13] query_devices_on_body: offset=0, size=1194, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=1194, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=3241, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=5288, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=7335, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=9382, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=11429, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=13476, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=15523, size=8, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=15531, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=17578, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=19625, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=21672, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=23719, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=25766, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=27813, size=2047, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: offset=29860, size=1633, content=31493
+[2022-07-19 17:26:13] query_devices_on_body: {"result":true,"message":"OK","data":[{"devid":"DE03D7B0DFD1D481311E","devtype":"candtu-200","owner":"SANY_H","devclass":0,"status":1,"devprotocol":0,"data_extra":{"data_size":1752.32421875,"update_time":1658221209},"registertime":1629425963,"onlinetime":1658211086,"offlinetime":1658211446,"devname":"CANDTU_Rizhao_28","FwVer":"V3.36","HwVer":"V1.03","Serial":"D481311E","isodate":1658211087504,"model":"CANDTU-200UWGR","time":1658211087504,"currentfm":{"version":"3.36"},"CfgInfo":{"CAN":{"CAN1":{"Chn":1,"Enable":0,"ResEn":1,"Mode":0,"BpsBrp":11,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0},{"Mask":0,"Acc":0}]},"CAN0":{"Chn":0,"Enable":1,"ResEn":1,"Mode":0,"BpsBrp":11,"BpsSjw":0,"BpsSeg1":3,"BpsSeg2":1,"BpsSmp":0,"FltFmat":0,"Flt":[{"Mask":2147483136,"Acc":1879703552},{"Mask":2013265920,"Acc":134217728},{"Mask":2147483646,"Acc":1507854336},{"Mask":2147483136,"Acc":1912598528},{"Mask":2147483646,"Acc":1912464384},{"Mask":2147483646,"Acc":1912459776},{"Mask":2147483646,"Acc":1507853824},{"Mask":2147483646,"Acc":1912462336}]}},"IotEn":{"CAN0":1,"CAN1":1,"LIN0":0,"DI0":0,"GPS":0},"Quota":{"CAN0":100,"CAN1":0,"LIN0":0,"DI0":0,"GPS":0},"DI":{"DI0":{"Chn":0,"Enable":0,"Func":0,"Interval":0}},"DO":{"DO0":{"Chn":0,"Enable":0,"Func":1,"InOut":0,"Lat":0,"Long":0,"Radius":50,"Output":1}},"GPSRec":{"Enable":0,"Type":0,"Period":1},"LIN":{"LIN0":{"Chn":0,"Enable":0,"Baud":20000,"DataLen":8}},"Net":{"Net0":{"Chn":0,"Enable":1,"Proto":1,"LPort":1080,"RAddr":"streamSet.sany.com.cn","RPort":55572},"Net1":{"Chn":1,"Enable":1,"Proto":1,"LPort":1081,"RAddr":"streamSet.sany.com.cn","RPort":55567},"Net2":{"Chn":2,"Enable":0,"Proto":1,"LPort":1082,"RAddr":"streamSet.sany.com.cn","RPort":55567}},"NetFlt":{"Enable":0,"FltNum":0},"NetGen":{"Times":0,"NetLogEn":0,"Proto":0,"SendIdEn":1},"RecCfg":{"RecFullHdl":0,"RecFSize":10,"RecMer":0,"RecErr":1},"SMS":{"SMS0":{"Chn":...
+[2022-07-19 17:26:13] Device candtu-200 DE03D7B0DFD1D481311E.
+[2022-07-19 17:26:13] Device candtu-200 AA03B98FE0D1D4B12504.
+[2022-07-19 17:26:13] Device candtu-200 A603B98FE0D1D4B11F06.
+[2022-07-19 17:26:13] Device candtu-200 9503B98FE0D1D4A10C18.
+[2022-07-19 17:26:13] Device candtu-200 340370D4E1D1D441071F.
+[2022-07-19 17:26:13] Device candtu-200 0103768FE2D1D4491316.
+[2022-07-19 17:26:13] Device candtu-200 9B03B98FE0D1D4B11703.
+[2022-07-19 17:26:13] Device candtu-200 2003768FE2D1D4493315.
+[2022-07-19 17:26:13] Device candtu-200 9603B98FE0D1D4990B22.
+[2022-07-19 17:26:13] Device candtu-200 B503B98FE0D1D4A12B19.
+[2022-10-17 13:59:43] ================= Logging =================
+[2022-10-17 13:59:43] Disconnect server ...
+[2022-10-17 13:59:43]  logout...

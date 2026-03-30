@@ -1,0 +1,82 @@
+<RCC>
+    <qresource prefix="/">
+        <file>styles/app_styles.qss</file>
+        <file>app.ico</file>
+        <file>logo.png</file>
+        <file>logo_transparent.png</file>
+        <file>device.png</file>
+        <file>view.png</file>
+        <file>send.png</file>
+        <file>channel.png</file>
+        <file>advanced.png</file>
+        <file>tools.png</file>
+        <file>settings.png</file>
+        <file alias="checkbox_checked.png">icons/checkbox_checked.png</file>
+        <file alias="checkbox_unchecked.png">icons/checkbox_unchecked.png</file>
+        <file alias="checkbox_unchecked_hover.png">icons/checkbox_unchecked_hover.png</file>
+        <file alias="down_arrow.png">icons/down_arrow.png</file>
+        <file alias="down_arrow_hover.png">icons/down_arrow_hover.png</file>
+        <file alias="down_arrow_pressed.png">icons/down_arrow_pressed.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/add-line_horizontal.png</file>
+        <file>icons/add-line_vertical.png</file>
+        <file>icons/btn_close.png</file>
+        <file>icons/btn_close_hover.png</file>
+        <file>icons/btn_close_pressed.png</file>
+        <file>icons/btn_max.png</file>
+        <file>icons/btn_max_hover.png</file>
+        <file>icons/btn_max_pressed.png</file>
+        <file>icons/btn_min.png</file>
+        <file>icons/btn_min_hover.png</file>
+        <file>icons/btn_min_pressed.png</file>
+        <file>icons/btn_normal.png</file>
+        <file>icons/btn_normal_hover.png</file>
+        <file>icons/btn_normal_pressed.png</file>
+        <file>icons/channel_off.png</file>
+        <file>icons/channel_on.png</file>
+        <file>icons/checkbox_checked.png</file>
+        <file>icons/checkbox_unchecked.png</file>
+        <file>icons/checkbox_unchecked_hover.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/down_arrow.png</file>
+        <file>icons/down_arrow_hover.png</file>
+        <file>icons/down_arrow_pressed.png</file>
+        <file>icons/light_btn_close.png</file>
+        <file>icons/light_btn_close_hover.png</file>
+        <file>icons/light_btn_close_pressed.png</file>
+        <file>icons/light_btn_help.png</file>
+        <file>icons/light_btn_help_hover.png</file>
+        <file>icons/light_btn_help_pressed.png</file>
+        <file>icons/light_btn_max.png</file>
+        <file>icons/light_btn_max_hover.png</file>
+        <file>icons/light_btn_max_pressed.png</file>
+        <file>icons/light_btn_min.png</file>
+        <file>icons/light_btn_min_hover.png</file>
+        <file>icons/light_btn_min_pressed.png</file>
+        <file>icons/light_btn_normal.png</file>
+        <file>icons/light_btn_normal_hover.png</file>
+        <file>icons/light_btn_normal_pressed.png</file>
+        <file>icons/spin_down_arrow.png</file>
+        <file>icons/spin_down_arrow_hover.png</file>
+        <file>icons/spin_down_arrow_pressed.png</file>
+        <file>icons/spin_up_arrow.png</file>
+        <file>icons/spin_up_arrow_hover.png</file>
+        <file>icons/spin_up_arrow_pressed.png</file>
+        <file>icons/sub-line_horizontal.png</file>
+        <file>icons/sub-line_vertical.png</file>
+        <file>icons/tab_add.png</file>
+        <file>icons/tab_add_hover.png</file>
+        <file>icons/tab_add_pressed.png</file>
+        <file>icons/tab_close_hover.png</file>
+        <file>icons/tab_close_normal.png</file>
+        <file>icons/tab_close_pressed.png</file>
+        <file>icons/tab_close_selected.png</file>
+        <file>icons/table_header_sort_down_arrow.png</file>
+        <file>icons/table_header_sort_up_arrow.png</file>
+        <file>icons/tree_close.png</file>
+        <file>icons/tree_close_hover.png</file>
+        <file>icons/tree_open.png</file>
+        <file>icons/tree_open_hover.png</file>
+    </qresource>
+</RCC>

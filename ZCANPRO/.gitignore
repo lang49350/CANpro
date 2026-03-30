@@ -1,0 +1,55 @@
+# 编译输出
+build/
+bin/
+debug/
+release/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+
+# Qt临时文件
+*.pro.user
+*.pro.user.*
+*.autosave
+.qmake.stash
+Makefile
+Makefile.*
+
+# IDE配置
+.vscode/
+.idea/
+*.suo
+*.user
+*.ncb
+*.aps
+*.sdf
+*.opensdf
+
+# 备份文件
+备份/
+*.bak
+*.backup
+
+# 日志文件
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# 临时文件
+*~
+*.swp
+*.swo
+*.tmp

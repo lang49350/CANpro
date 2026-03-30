@@ -1,0 +1,172 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "17.0.8.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"vgap": 6
+				"hgap": 6
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 1
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+						"axis": 0
+					} ) {
+						name: "filterPanel"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table1"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 0, 0, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "statusLable"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+					add( new FormComponent( "javax.swing.JProgressBar" ) {
+						name: "progressBar1"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+						name: "hSpacer1"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "OK"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ok", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 3
+						"gridy": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": "Cancel"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancel", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 0
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/新增.png" )
+						"toolTipText": "新增"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addOne", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/清除.png" )
+						"toolTipText": "清除选定"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeSelected", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/判断数据.png" )
+						"toolTipText": "按照选定ID清除"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeBySelecedCanId", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button4"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/清除所有.png" )
+						"toolTipText": "清除所有"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeAll", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button9"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/加入清单.png" )
+						"toolTipText": "加入清单"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addToKeepList", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button10"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/编辑查看清单.png" )
+						"toolTipText": "查看清单"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editKeepList", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button8"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/仅保留清单中条目.png" )
+						"toolTipText": "仅保留清单中项目"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cleanDataByKeepList", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button5"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/save.png" )
+						"toolTipText": "保存"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveToDb", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button6"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/reload.png" )
+						"toolTipText": "载入"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loadFormDb", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button7"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/16寄件、发送.png" )
+						"toolTipText": "发送"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "send", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button11"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/文件-发送文件.png" )
+						"toolTipText": "按文件发送"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sendByFile", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBoxForCircle"
+						"text": "循环"
+						addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "checkBoxForCircleStateChanged", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "circelWait"
+						"maximumSize": new java.awt.Dimension( 160, 30 )
+						"preferredSize": new java.awt.Dimension( 120, 30 )
+						"minimumSize": new java.awt.Dimension( 120, 30 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "ms"
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+						name: "hSpacer2"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1165, 390 )
+		} )
+	}
+}

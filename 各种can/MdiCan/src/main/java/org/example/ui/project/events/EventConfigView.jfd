@@ -1,0 +1,173 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "17.0.8.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 0
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"rows": 11
+					} ) {
+						name: "panel"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel8"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label10"
+								"text": "当前执行次数"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "currentRunTime"
+								"text": "0"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label14"
+								"text": "当前延时"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "currentRunWait"
+								"text": "0"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel1"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label2"
+								"text": "事件名称"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFileName"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label11"
+								"text": "限定次数"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFileLimit"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel2"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label3"
+								"text": "描述"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldCondition"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel3"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label4"
+								"text": "事件发送后的等待时间(ms)"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldWait1"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel4"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label5"
+								"text": "延时时间（ms）"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldWait2"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel9"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label12"
+								"text": " delta time (ms)"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldDelta"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+							name: "panel5"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label6"
+								"text": "延时到后发送的消息,结构ID_DATA(ID不带0x前缀,16进制，多个消息使用英文逗号分隔)"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldMessage1"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "button1"
+								"text": "文件导入"
+								"maximumSize": new java.awt.Dimension( 85, 30 )
+								"preferredSize": new java.awt.Dimension( 85, 30 )
+								"minimumSize": new java.awt.Dimension( 85, 30 )
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loadTxtForMsg1", true ) )
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel6"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label8"
+								"text": "等待时间（ms）"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldWait3"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+							name: "panel7"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label9"
+								"text": "等待时间到后发送的消息"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldMessage2"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "button2"
+								"text": "文件导入"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loadFileForMsg2", true ) )
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel10"
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "checkBoxEnable"
+								"text": "启用"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "保存"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "onOk", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": "Cancel"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 65, 45 )
+			"size": new java.awt.Dimension( 1060, 335 )
+		} )
+	}
+}

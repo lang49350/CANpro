@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--Created By ZLG ZCANPro.-->
+<flow>
+ <item type="general">
+  <functionaddr>true</functionaddr>
+  <is_crc_cmd>false</is_crc_cmd>
+  <sid>10</sid>
+  <desc>进入扩展模式</desc>
+  <data>03 </data>
+  <suppress_response>false</suppress_response>
+ </item>
+ <item type="general">
+  <functionaddr>false</functionaddr>
+  <is_crc_cmd>false</is_crc_cmd>
+  <sid>31</sid>
+  <desc>检查编程前提条件</desc>
+  <data>01 02 03</data>
+  <suppress_response>false</suppress_response>
+ </item>
+ <item type="general">
+  <functionaddr>true</functionaddr>
+  <is_crc_cmd>false</is_crc_cmd>
+  <sid>85</sid>
+  <desc>关闭DTC设置</desc>
+  <data>02 </data>
+  <suppress_response>false</suppress_response>
+ </item>
+ <item type="general">
+  <functionaddr>true</functionaddr>
+  <is_crc_cmd>false</is_crc_cmd>
+  <sid>28</sid>
+  <desc>关闭非诊断通信</desc>
+  <data>03 01 </data>
+  <suppress_response>false</suppress_response>
+ </item>
+ <item type="general">
+  <functionaddr>false</functionaddr>
+  <is_crc_cmd>false</is_crc_cmd>
+  <sid>10</sid>
+  <desc>进入编程模式</desc>
+  <data>02 </data>
+  <suppress_response>false</suppress_response>
+ </item>
+ <item type="security">
+  <functionaddr>false</functionaddr>
+  <level>1</level>
+  <dll></dll>
+  <desc>ECU解锁</desc>
+ </item>
+ <item type="download">
+  <desc>Flash driver</desc>
+  <functionaddr>false</functionaddr>
+  <file></file>
+  <addresssize>4</addresssize>
+  <lengthsize>4</lengthsize>
+  <category>1</category>
+  <crc_poly>4c11db7</crc_poly>
+  <crc_init_value>ffffffff</crc_init_value>
+  <crc_xor_value>ffffffff</crc_xor_value>
+  <crc_in_reverse>1</crc_in_reverse>
+  <crc_out_reverse>1</crc_out_reverse>
+  <crc_cmd>31 01 02 02</crc_cmd>
+  <crc_enable>1</crc_enable>
+ </item>
+ <item type="download">
+  <desc>文件下载</desc>
+  <functionaddr>false</functionaddr>
+  <file></file>
+  <addresssize>4</addresssize>
+  <lengthsize>4</lengthsize>
+  <category>0</category>
+  <crc_poly>4c11db7</crc_poly>
+  <crc_init_value>ffffffff</crc_init_value>
+  <crc_xor_value>ffffffff</crc_xor_value>
+  <crc_in_reverse>1</crc_in_reverse>
+  <crc_out_reverse>1</crc_out_reverse>
+  <crc_cmd>31 01 02 02</crc_cmd>
+  <crc_enable>1</crc_enable>
+ </item>
+ <item type="general">
+  <functionaddr>false</functionaddr>
+  <is_crc_cmd>false</is_crc_cmd>
+  <sid>31</sid>
+  <desc>CRC校验</desc>
+  <data>01 </data>
+  <suppress_response>false</suppress_response>
+ </item>
+ <item type="general">
+  <functionaddr>true</functionaddr>
+  <is_crc_cmd>false</is_crc_cmd>
+  <sid>11</sid>
+  <desc>ECU复位</desc>
+  <data>01 </data>
+  <suppress_response>false</suppress_response>
+ </item>
+</flow>

@@ -1,0 +1,4325 @@
+{
+		"sid_allowed":[{"start":"0x10", "end":"0x3E"}, {"start":"0x83", "end":"0x88"}, {"start":"0xC0", "end":"0xC2"}],
+		"classification": [
+			{
+				"enable": true,
+				"id": "0x00",
+				"name": "常用服务",
+				"engName": "Common services",
+				"services": [
+					
+				]
+			},
+			{
+				"enable": true,
+				"id": "0x01",
+				"name": "动力总成诊断和冻结数据",
+				"engName": "Powertrain Diagnostic and Freeze Data",
+				"services": [
+					{
+						"sid": "0x01",
+						"servicename": "用于请求当前动力系统诊断数据",
+						"serviceengname": "Request Current Powertrain Diagnostic Data",
+						"subitems": [
+							{
+								"index": "1",
+								"data": "",
+								"desc": "PID支持情况(00-20)",
+								"engdesc": "PID supported,$01-$20 Read current",
+								"qualifier": "_PID_00_PID_supported_01_20_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x00"
+							},
+							{
+								"index": "3",
+								"data": "",
+								"desc": "故障码清除后的监测状态",
+								"engdesc": "Status of monitors Read current",
+								"qualifier": "_PID_01_Status_of_monitors_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x01"
+							},
+							{
+								"index": "5",
+								"data": "",
+								"desc": "冻结的DTC",
+								"engdesc": "DTC that Caused Freeze Frame Storage Read current",
+								"qualifier": "_PID_02_DTC_that_Caused_Freeze_Frame_Storage_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x02"
+							},
+							{
+								"index": "7",
+								"data": "",
+								"desc": "燃油系统状态",
+								"engdesc": "Fuel System Status Read current",
+								"qualifier": "_PID_03_Fuel_System_Status_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x03"
+							},
+							{
+								"index": "9",
+								"data": "",
+								"desc": "引擎计算负载",
+								"engdesc": "Calculated LOAD Value Read current",
+								"qualifier": " _PID_04_Calculated_LOAD_Value_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x04"
+							},
+							{
+								"index": "11",
+								"data": "",
+								"desc": "引擎冷却液温度",
+								"engdesc": "Engine Coolant Temperature Read current",
+								"qualifier": "_PID_05_Engine_Coolant_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x05"
+							},
+							{
+								"index": "13",
+								"data": "",
+								"desc": "燃油压力",
+								"engdesc": "Fuel Rail Pressure(Gauge) Read current",
+								"qualifier": "_PID_0A_Fuel_Rail_Pressure_Gauge_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x0A"
+							},
+							{
+								"index": "15",
+								"data": "",
+								"desc": "油箱压力绝对值",
+								"engdesc": "Intake Manifold Absolute Pressure Read current",
+								"qualifier": "_PID_0B_Intake_Manifold_Absolute_Pressure_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x0B"
+							},
+							{
+								"index": "17",
+								"data": "",
+								"desc": "引擎转速",
+								"engdesc": "Engine RPM Read current",
+								"qualifier": "_PID_0C_Engine_RPM_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x0C"
+							},
+							{
+								"index": "19",
+								"data": "",
+								"desc": "汽车速度",
+								"engdesc": "Vehicle Speed Sensor Read current",
+								"qualifier": "_PID_0D_Vehicle_Speed_Sensor_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x0D"
+							},
+							{
+								"index": "21",
+								"data": "",
+								"desc": "点火提起值",
+								"engdesc": "Ignition Timing Advance Read current",
+								"qualifier": "_PID_0E_Ignition_Timing_Advance_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x0E"
+							},
+							{
+								"index": "23",
+								"data": "",
+								"desc": "油箱空气温度",
+								"engdesc": "Intake Air Temperature Read current",
+								"qualifier": "_PID_0F_Intake_Air_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x0F"
+							},
+							{
+								"index": "25",
+								"data": "",
+								"desc": "MAF空气流量速率",
+								"engdesc": "Air Flow Rate Read current",
+								"qualifier": "_PID_10_Air_Flow_Rate_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x10"
+							},
+							{
+								"index": "27",
+								"data": "",
+								"desc": "节气门位置",
+								"engdesc": "Absolute Throttle Position Read current",
+								"qualifier": " _PID_11_Absolute_Throttle_Position_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x11"
+							},
+							{
+								"index": "29",
+								"data": "",
+								"desc": "二次空气状态",
+								"engdesc": "Commanded Secondary Air Status Read current",
+								"qualifier": "_PID_12_Commanded_Secondary_Air_Status_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x12"
+							},
+							{
+								"index": "31",
+								"data": "",
+								"desc": "当前车辆OBD标准指示",
+								"engdesc": "OBD requirements for vehicle or engine Read current",
+								"qualifier": "_PID_1C_OBD_requirements_for_vehicle_or_engine_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x1C"
+							},
+							{
+								"index": "33",
+								"data": "",
+								"desc": "辅助输入状态",
+								"engdesc": "Auxiliary Input Status Read current",
+								"qualifier": "_PID_1E_Auxiliary_Input_Status_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x1E"
+							},
+							{
+								"index": "35",
+								"data": "",
+								"desc": "引擎启动后运行时间",
+								"engdesc": "Time Since Engine Start Read current",
+								"qualifier": "_PID_1F_Time_Since_Engine_Start_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x1F"
+							},
+							{
+								"index": "37",
+								"data": "",
+								"desc": "PID支持情况(21-40)",
+								"engdesc": "PID supported,$21-$40 Read current",
+								"qualifier": "_PID_20_PID_supported_21_40_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x20"
+							},
+							{
+								"index": "39",
+								"data": "",
+								"desc": "MIL灯点亮后车辆行驶的里程",
+								"engdesc": "Travel Distance While MIL Activated Read current",
+								"qualifier": "_PID_21_Travel_Distance_While_MIL_Activated_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x21"
+							},
+							{
+								"index": "41",
+								"data": "",
+								"desc": "油轨压力(相对于歧管真空度)",
+								"engdesc": "Fuel Rail Pressure Relative To Manifold Vacuum Read current",
+								"qualifier": "_PID_22_Fuel_Rail_Pressure_Relative_To_Manifold_Vacuum_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x22"
+							},
+							{
+								"index": "43",
+								"data": "",
+								"desc": "油轨压力(柴油或汽油直喷)",
+								"engdesc": "Fuel Rail Pressure Read current",
+								"qualifier": "_PID_23_Fuel_Rail_Pressure_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x23"
+							},
+							{
+								"index": "45",
+								"data": "",
+								"desc": "废气循环命令",
+								"engdesc": "Commanded EGR Read current",
+								"qualifier": "_PID_2C_Commanded_EGR_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x2C"
+							},
+							{
+								"index": "47",
+								"data": "",
+								"desc": "废气循环错误",
+								"engdesc": "EGR Error Read current",
+								"qualifier": "_PID_2D_EGR_Error_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x2D"
+							},
+							{
+								"index": "49",
+								"data": "",
+								"desc": "蒸发净化命令",
+								"engdesc": "Commanded Evaporative Purge Read current",
+								"qualifier": "_PID_2E_Commanded_Evaporative_Purge_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x2E"
+							},
+							{
+								"index": "51",
+								"data": "",
+								"desc": "油量液位情况",
+								"engdesc": "Fuel Level Input Read current",
+								"qualifier": "_PID_2F_Fuel_Level_Input_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x2F"
+							},
+							{
+								"index": "53",
+								"data": "",
+								"desc": "故障码被清除之后经历的暖机循环个数",
+								"engdesc": "Number of warm-ups since DTCs cleared Read current",
+								"qualifier": "_PID_30_Number_of_warm_ups_since_DTCs_cleared_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x30"
+							},
+							{
+								"index": "55",
+								"data": "",
+								"desc": "故障码清除后行驶里程",
+								"engdesc": "Distance since DTCs cleared Read current",
+								"qualifier": "_PID_31_Distance_since_DTCs_cleared_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x31"
+							},
+							{
+								"index": "57",
+								"data": "",
+								"desc": "系统蒸汽压力",
+								"engdesc": "Evap System Vapor Pressure Read current",
+								"qualifier": "_PID_32_Evap_System_Vapor_Pressure_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x32"
+							},
+							{
+								"index": "59",
+								"data": "",
+								"desc": "大气压",
+								"engdesc": "Barometric Pressure Read current",
+								"qualifier": "_PID_33_Barometric_Pressure_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x33"
+							},
+							{
+								"index": "61",
+								"data": "",
+								"desc": "催化剂温度(通道1，传感器1)",
+								"engdesc": "Catalyst Temp-Bank 1 Sensor 1 Read current",
+								"qualifier": "_PID_3C_Catalyst_Temp_Bank_1_Sensor_1_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x3C"
+							},
+							{
+								"index": "63",
+								"data": "",
+								"desc": "催化剂温度(通道2，传感器1)",
+								"engdesc": "Catalyst Temp-Bank 2 Sensor 1 Read current",
+								"qualifier": "_PID_3D_Catalyst_Temp_Bank_2_Sensor_1_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x3D"
+							},
+							{
+								"index": "65",
+								"data": "",
+								"desc": "催化剂温度(通道1，传感器2)",
+								"engdesc": "Catalyst Temp-Bank 1 Sensor 2 Read current",
+								"qualifier": "_PID_3E_Catalyst_Temp_Bank_1_Sensor_2_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "3E"
+							},
+							{
+								"index": "67",
+								"data": "",
+								"desc": "催化剂温度(通道2，传感器2)",
+								"engdesc": "Catalyst Temp-Bank 2 Sensor 2 Read current",
+								"qualifier": "_PID_3F_Catalyst_Temp_Bank_2_Sensor_2_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x3F"
+							},
+							{
+								"index": "69",
+								"data": "",
+								"desc": "PID支持请况(41-60)",
+								"engdesc": "PID supported,$41-$60 Read current",
+								"qualifier": "_PID_40_PID_supported_41_60_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x40"
+							},
+							{
+								"index": "71",
+								"data": "",
+								"desc": "本次行程监控状态",
+								"engdesc": "Enable status of supported monitors this monitoring cycle Read current",
+								"qualifier": "_PID_41_Enable_status_of_supported_monitors_this_monitoring_cycl_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x41"
+							},
+							{
+								"index": "73",
+								"data": "",
+								"desc": "控制模块电压",
+								"engdesc": "Control Module Voltage Read current",
+								"qualifier": "_PID_42_Control_Module_Voltage_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x42"
+							},
+							{
+								"index": "75",
+								"data": "",
+								"desc": "绝对载荷",
+								"engdesc": "Absolute Load Value Read current",
+								"qualifier": "_PID_43_Absolute_Load_Value_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x43"
+							},
+							{
+								"index": "77",
+								"data": "",
+								"desc": "等效比命令",
+								"engdesc": "Fuel/Air Commanded Equivalence Ratio Read current",
+								"qualifier": "_PID_44_Fuel_Air_Commanded_Equivalence_Ratio_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x44"
+							},
+							{
+								"index": "79",
+								"data": "",
+								"desc": "相对节气门位置",
+								"engdesc": "Relative Throttle Position Read current",
+								"qualifier": "_PID_45_Relative_Throttle_Position_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x45"
+							},
+							{
+								"index": "81",
+								"data": "",
+								"desc": "环境空气温度",
+								"engdesc": "PID supported,$41-$60 Read current",
+								"qualifier": "_PID_46_Ambient_Air_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x46"
+							},
+							{
+								"index": "83",
+								"data": "",
+								"desc": "绝对节气门位置B",
+								"engdesc": "Absolute Throttle Position B Read current",
+								"qualifier": "_PID_47_Absolute_Throttle_Position_B_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x47"
+							},
+							{
+								"index": "85",
+								"data": "",
+								"desc": "绝对节气门位置C",
+								"engdesc": "Absolute Throttle Position C Read current",
+								"qualifier": "_PID_48_Absolute_Throttle_Position_C_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x48"
+							},
+							{
+								"index": "87",
+								"data": "",
+								"desc": "加速踏板位置D",
+								"engdesc": "Accelerator Pedal Position D Read current",
+								"qualifier": "_PID_49_Accelerator_Pedal_Position_D_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x49"
+							},
+							{
+								"index": "89",
+								"data": "",
+								"desc": "加速踏板位置E",
+								"engdesc": "Accelerator Pedal Position E Read current",
+								"qualifier": "_PID_4A_Accelerator_Pedal_Position_E_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x4A"
+							},
+							{
+								"index": "91",
+								"data": "",
+								"desc": "加速踏板位置F",
+								"engdesc": "Accelerator Pedal Position F Read current",
+								"qualifier": "_PID_4B_Accelerator_Pedal_Position_F_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x4B"
+							},
+							{
+								"index": "93",
+								"data": "",
+								"desc": "油门执行器控制值",
+								"engdesc": "Commanded Throttle Actuator Control Read current",
+								"qualifier": "_PID_4C_Commanded_Throttle_Actuator_Control_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x4C"
+							},
+							{
+								"index": "95",
+								"data": "",
+								"desc": "MIL灯亮之后行驶时间",
+								"engdesc": "Engine run time while MIL activated Read current",
+								"qualifier": "_PID_4D_Engine_run_time_while_MIL_activated_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x4D"
+							},
+							{
+								"index": "97",
+								"data": "",
+								"desc": "故障码亮之后时间",
+								"engdesc": "Engine run time since DTCs cleared Read current",
+								"qualifier": "_PID_4E_Engine_run_time_since_DTCs_cleared_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x4E"
+							},
+							{
+								"index": "99",
+								"data": "",
+								"desc": "对于当量比、氧传感器电压、氧传感器电流和进气歧管绝对压力最大值",
+								"engdesc": "Maximun value for Intake Manifold Absolute Pressure Read current",
+								"qualifier": "_PID_4F_External_Test_Equipment_Configuration_Information_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x4F"
+							},
+							{
+								"index": "101",
+								"data": "",
+								"desc": "外部测试设备配置信息＃2",
+								"engdesc": "External Test Equipment Configuration Information #2 Read current",
+								"qualifier": "_PID_50_External_Test_Equipment_Configuration_Information_2_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x50"
+							},
+							{
+								"index": "103",
+								"data": "",
+								"desc": "油料类型",
+								"engdesc": "Type of fuel currently being utilized by the internal combustion engine Read current",
+								"qualifier": "_PID_51_Type_of_fuel_currently_being_utilized_by_the_internal_co_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x51"
+							},
+							{
+								"index": "105",
+								"data": "",
+								"desc": "乙醇百分比",
+								"engdesc": "Alcohol Fuel Percentage Read current",
+								"qualifier": "_PID_52_Alcohol_Fuel_Percentage_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x52"
+							},
+							{
+								"index": "107",
+								"data": "",
+								"desc": "绝对蒸汽系统压力",
+								"engdesc": "Absolute Evap System Vapor Pressure Read current",
+								"qualifier": "_PID_53_Absolute_Evap_System_Vapor_Pressure_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x53"
+							},
+							{
+								"index": "109",
+								"data": "",
+								"desc": "蒸汽系统压力",
+								"engdesc": "Evap System Vapor Pressure Read current",
+								"qualifier": "_PID_54_Evap_System_Vapor_Pressure_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x54"
+							},
+							{
+								"index": "111",
+								"data": "",
+								"desc": "绝对油轨压力",
+								"engdesc": "Fuel Rail Pressure(absolute)Read current",
+								"qualifier": "_PID_59_Fuel_Rail_Pressure_absolute_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x59"
+							},
+							{
+								"index": "113",
+								"data": "",
+								"desc": "相对加速踏板位置",
+								"engdesc": "Relative Accelerator Pedal Position Read current",
+								"qualifier": "_PID_5A_Relative_Accelerator_Pedal_Position_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x5A"
+							},
+							{
+								"index": "115",
+								"data": "",
+								"desc": "混合动力电池剩余",
+								"engdesc": "Hybrid Battery Pack Remaining Life Read current",
+								"qualifier": "_PID_5B_Hybrid_Battery_Pack_Remaining_Life_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x5B"
+							},
+							{
+								"index": "117",
+								"data": "",
+								"desc": "引擎油温",
+								"engdesc": "Engine Oil Temperature Read current",
+								"qualifier": "_PID_5C_Engine_Oil_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x5C"
+							},
+							{
+								"index": "119",
+								"data": "",
+								"desc": "油料注入时序",
+								"engdesc": "Fuel Injection Timing Read current",
+								"qualifier": "_PID_5D_Fuel_Injection_Timing_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x5D"
+							},
+							{
+								"index": "121",
+								"data": "",
+								"desc": "引擎油量消耗速率",
+								"engdesc": "Engine Fuel Rate Read current",
+								"qualifier": "_PID_5E_Engine_Fuel_Rate_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x5E"
+							},
+							{
+								"index": "123",
+								"data": "",
+								"desc": "设计排放要求",
+								"engdesc": "Emisson Requirements to which vehicle is designed Read current",
+								"qualifier": "_PID_5F_Emission_Requirements_to_which_vehicle_is_designed_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x5F"
+							},
+							{
+								"index": "125",
+								"data": "",
+								"desc": "PID支持情况(61-80)",
+								"engdesc": "PID supported,$61-$80 Read current",
+								"qualifier": "_PID_60_PID_supported_61_80_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x60"
+							},
+							{
+								"index": "127",
+								"data": "",
+								"desc": "驾驶者要求引擎的扭矩百分比",
+								"engdesc": "Driver's Demand Engine - Percent Torq Read current",
+								"qualifier": "_PID_61_Driver_s_Demand_Engine_Percent_Torq_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x61"
+							},
+							{
+								"index": "129",
+								"data": "",
+								"desc": "实际引擎扭矩百分比",
+								"engdesc": "Actual Engine - Percent Torq Read current",
+								"qualifier": "_PID_62_Actual_Engine_Percent_Torq_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x62"
+							},
+							{
+								"index": "131",
+								"data": "",
+								"desc": "引擎参考扭矩",
+								"engdesc": "Engine Reference Torq Read current",
+								"qualifier": "_PID_63_Engine_Reference_Torq_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x63"
+							},
+							{
+								"index": "133",
+								"data": "",
+								"desc": "引擎扭矩百分比数据",
+								"engdesc": "Engine Percent Torq Data Read current",
+								"qualifier": "_PID_64_Engine_Percent_Torq_Data_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x64"
+							},
+							{
+								"index": "135",
+								"data": "",
+								"desc": "辅助输入输出支持",
+								"engdesc": "Auxiliary Inputs/Outputs Read current",
+								"qualifier": "_PID_65_Auxiliary_Inputs_Outputs_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x65"
+							},
+							{
+								"index": "137",
+								"data": "",
+								"desc": "大容量空气流量传感器",
+								"engdesc": "Mass Air Flows Sensor Read current",
+								"qualifier": "_PID_66_Mass_Air_Flow_Sensor_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x66"
+							},
+							{
+								"index": "139",
+								"data": "",
+								"desc": "引擎冷却液温度",
+								"engdesc": "Engine Coolant Temperature Read current",
+								"qualifier": "_PID_67_Engine_Coolant_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x67"
+							},
+							{
+								"index": "141",
+								"data": "",
+								"desc": "油箱空气温度传感器",
+								"engdesc": "Air Intake Temperature Sensor Read current",
+								"qualifier": "_PID_68_Air_Intake_Temperature_Sensor_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x68"
+							},
+							{
+								"index": "143",
+								"data": "",
+								"desc": "EGR命令和EGR错误",
+								"engdesc": "Commanded EGR and EGR Error Read current",
+								"qualifier": "_PID_69_Commanded_EGR_and_EGR_Error_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x69"
+							},
+							{
+								"index": "145",
+								"data": "",
+								"desc": "柴油机的进气流量控制命令和相对进气的流动的位置",
+								"engdesc": "Commanded Diesel Intake Air Flow Control and Relative Air Flow Position Read current",
+								"qualifier": "_PID_6A_Command_Diesel_Intake_Air_Flow_Control_and_Relative_Air__REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x6A"
+							},
+							{
+								"index": "147",
+								"data": "",
+								"desc": "排气回流温度",
+								"engdesc": "Exhaust Gas Recirculation Temperature Read current",
+								"qualifier": "_PID_6B_Exhaust_Gas_Recirculation_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x6B"
+							},
+							{
+								"index": "149",
+								"data": "",
+								"desc": "油门执行器控制命令和相对油门执行器位置",
+								"engdesc": "Commanded Throttle Actuator Control and Relative Throttle Position Throttle Position Read current",
+								"qualifier": "_PID_6C_Commanded_Throttle_Actuator_Control_and_Relative_Throt_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x6C"
+							},
+							{
+								"index": "151",
+								"data": "",
+								"desc": "油压控制系统",
+								"engdesc": "Fuel Pressure Control System Read current",
+								"qualifier": "_PID_6D_Fuel_Pressure_Control_System_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x6D"
+							},
+							{
+								"index": "153",
+								"data": "",
+								"desc": "注入压力控制系统",
+								"engdesc": "Injection Pressure Control System Read current",
+								"qualifier": "_PID_6E_Injection_Pressure_Control_System_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x6E"
+							},
+							{
+								"index": "155",
+								"data": "",
+								"desc": "涡轮增压器压缩机入口压力",
+								"engdesc": "Turbocharger Compressor Inlet Pressure Read current",
+								"qualifier": "_PID_6F_Turbocharger_Compressor_Inlet_Pressure_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x6F"
+							},
+							{
+								"index": "157",
+								"data": "",
+								"desc": "增压压力控制",
+								"engdesc": "Boost Pressure Control System Read current",
+								"qualifier": "_PID_70_Boost_Pressure_Control_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x70"
+							},
+							{
+								"index": "159",
+								"data": "",
+								"desc": "可变涡轮(VGT)控制",
+								"engdesc": "Variable Geometry Turbo(VGT)Control Read current",
+								"qualifier": "_PID_71_Variable_Geometry_Turbo_VGT_Control_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x71"
+							},
+							{
+								"index": "161",
+								"data": "",
+								"desc": "排气阀控制",
+								"engdesc": "Wastegate Control Read current",
+								"qualifier": "_PID_72_Wastegate_Control_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x72"
+							},
+							{
+								"index": "163",
+								"data": "",
+								"desc": "排气压力",
+								"engdesc": "Exhaust Pressure Read current",
+								"qualifier": "_PID_73_Exhaust_Pressure_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x73"
+							},
+							{
+								"index": "165",
+								"data": "",
+								"desc": "涡轮增压器转速",
+								"engdesc": "Turbocharger RPM Read current",
+								"qualifier": "_PID_74_Turbocharger_RPM_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x74"
+							},
+							{
+								"index": "167",
+								"data": "",
+								"desc": "涡轮增压器A温度",
+								"engdesc": "Turbocharger A Temperature Read current",
+								"qualifier": "_PID_75_Turbocharger_A_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x75"
+							},
+							{
+								"index": "169",
+								"data": "",
+								"desc": "涡轮增压器B温度",
+								"engdesc": "Turbocharger B Temperature Read current",
+								"qualifier": "_PID_76_Turbocharger_B_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x76"
+							},
+							{
+								"index": "171",
+								"data": "",
+								"desc": "增压空气冷却器的温度",
+								"engdesc": "Charge Air Cooler Temperature(CACT)Read current",
+								"qualifier": "_PID_77_Charge_Air_Cooler_Temperature_CACT_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x77"
+							},
+							{
+								"index": "173",
+								"data": "",
+								"desc": "废气温度 通道1",
+								"engdesc": "Exhaust Gas Temperature(EGT)Bank 1 Read current",
+								"qualifier": "_PID_78_Exhaust_Gas_Temperature_EGT_Bank_1_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x78"
+							},
+							{
+								"index": "175",
+								"data": "",
+								"desc": "废气温度 通道2",
+								"engdesc": "Exhaust Gas Temperature(EGT)Bank 2 Read current",
+								"qualifier": "_PID_79_Exhaust_Gas_Temperature_EGT_Bank_2_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x79"
+							},
+							{
+								"index": "177",
+								"data": "",
+								"desc": "柴油机微粒过滤器通道1",
+								"engdesc": "Particulate Filter(PF)Bank 1 Read current",
+								"qualifier": "_PID_7A_Particulate_Filter_PF_Bank_1_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x7A"
+							},
+							{
+								"index": "179",
+								"data": "",
+								"desc": "柴油机微粒过滤器通道2",
+								"engdesc": "Particulate Filter(PF)Bank 2 Read current",
+								"qualifier": "_PID_7B_Particulate_Filter_PF_Bank_2_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x7B"
+							},
+							{
+								"index": "181",
+								"data": "",
+								"desc": "柴油机微粒过滤器温度",
+								"engdesc": "Particulate Filter(PF)Temperature Read current",
+								"qualifier": "_PID_7C_Particulate_Filter_PF_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x7C"
+							},
+							{
+								"index": "183",
+								"data": "",
+								"desc": "NOX NTE (氮氧化物)控制区域状态",
+								"engdesc": "NOx NTE control area status Read current",
+								"qualifier": "_PID_7D_NOx_NTE_control_area_status_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x7D"
+							},
+							{
+								"index": "185",
+								"data": "",
+								"desc": "PM NTE控制区域状态",
+								"engdesc": "PM NTE control area status Read current",
+								"qualifier": "_PID_7E_PM_NTE_control_area_status_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x7E"
+							},
+							{
+								"index": "187",
+								"data": "",
+								"desc": "引擎工作时间",
+								"engdesc": "Engine Run Time Read current",
+								"qualifier": "_PID_7F_Engine_Run_Time_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x7F"
+							},
+							{
+								"index": "189",
+								"data": "",
+								"desc": "PID支持情况(81-A0)",
+								"engdesc": "PID supported,$81-$A0 Read current",
+								"qualifier": "_PID_80_PID_supported_81_A0_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x80"
+							},
+							{
+								"index": "191",
+								"data": "",
+								"desc": "辅助排放控置的发动机运转时间(AECD)",
+								"engdesc": "Engine Run Time for AECD 1-5 Read current",
+								"qualifier": "_PID_81_Engine_Run_Time_for_AECD_1_5_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x81"
+							},
+							{
+								"index": "193",
+								"data": "",
+								"desc": "辅助排放控置的发动机运转时间(AECD)",
+								"engdesc": "Engine Run Time for AECD 6-10 Read current",
+								"qualifier": "_PID_82_Engine_Run_Time_for_AECD_6_10_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x82"
+							},
+							{
+								"index": "195",
+								"data": "",
+								"desc": "NOX(氮氧化物)传感器",
+								"engdesc": "NOx Sensor Read current",
+								"qualifier": "_PID_83_NOx_Sensor_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x83"
+							},
+							{
+								"index": "197",
+								"data": "",
+								"desc": "歧管表面温度",
+								"engdesc": "Manifold Surface Temperature Read current",
+								"qualifier": "_PID_84_Manifold_Surface_Temperature_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x84"
+							},
+							{
+								"index": "199",
+								"data": "",
+								"desc": "NOX(氮氧化物)试剂系统",
+								"engdesc": "Nox Control System Read current",
+								"qualifier": "_PID_85_NOx_Control_System_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x85"
+							},
+							{
+								"index": "201",
+								"data": "",
+								"desc": "颗粒物(PM)传感器",
+								"engdesc": "Particulate Matter(PM)Sensor Read current",
+								"qualifier": "_PID_86_Particulate_Matter_PM_Sensor_REQUEST_CURR_PWRTRAIN_DATA",
+								"isIdInvalid": false,
+								"number": "0x86"
+							}
+						]
+					},
+					{
+						"sid": "0x02",
+						"servicename": "用于请求动力系统冻结帧数据",
+						"serviceengname": "Request Powertrain Freeze Frame Data",
+						"subitems": [
+							{
+								"index": "2",
+								"data": "",
+								"desc": "PID支持情况(00-20)",
+								"engdesc": "PID supported,$01-$20 Request Freeze Frame",
+								"qualifier": "_PID_00_PID_supported_01_20_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x00"
+							},
+							{
+								"index": "4",
+								"data": "",
+								"desc": "故障码清除后的监测状态",
+								"engdesc": "Status of monitors Request Freeze Frame",
+								"qualifier": "_PID_01_Status_of_monitors_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x01"
+							},
+							{
+								"index": "6",
+								"data": "",
+								"desc": "冻结的DTC",
+								"engdesc": "DTC that Caused Freeze Frame Storage Request Freeze Frame",
+								"qualifier": "_PID_02_DTC_that_Caused_Freeze_Frame_Storage_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x02"
+							},
+							{
+								"index": "8",
+								"data": "",
+								"desc": "燃油系统状态",
+								"engdesc": "Fuel System Status Request Freeze Frame",
+								"qualifier": "_PID_03_Fuel_System_Status_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x03"
+							},
+							{
+								"index": "10",
+								"data": "",
+								"desc": "引擎计算负载",
+								"engdesc": "Calculated LOAD Value Request Freeze Frame",
+								"qualifier": "_PID_04_Calculated_LOAD_Value_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x04"
+							},
+							{
+								"index": "12",
+								"data": "",
+								"desc": "引擎冷却液温度",
+								"engdesc": "Engine Coolant Temperature Request Freeze Frame",
+								"qualifier": "_PID_05_Engine_Coolant_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x05"
+							},
+							{
+								"index": "14",
+								"data": "",
+								"desc": "燃油压力",
+								"engdesc": "Fuel Rail Pressure(Gauge) Request Freeze Frame",
+								"qualifier": "_PID_0A_Fuel_Rail_Pressure_Gauge_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x0A"
+							},
+							{
+								"index": "16",
+								"data": "",
+								"desc": "油箱压力绝对值",
+								"engdesc": "Intake Manifold Absolute Pressure Request Freeze Frame",
+								"qualifier": "_PID_0B_Intake_Manifold_Absolute_Pressure_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x0B"
+							},
+							{
+								"index": "18",
+								"data": "",
+								"desc": "引擎转速",
+								"engdesc": "Engine RPM Request Freeze Frame",
+								"qualifier": "_PID_0C_Engine_RPM_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x0C"
+							},
+							{
+								"index": "20",
+								"data": "",
+								"desc": "汽车速度",
+								"engdesc": "Vehicle Speed Sensor Request Freeze Frame",
+								"qualifier": "_PID_0D_Vehicle_Speed_Sensor_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x0D"
+							},
+							{
+								"index": "22",
+								"data": "",
+								"desc": "点火提起值",
+								"engdesc": "Ignition Timing Advance Request Freeze Frame",
+								"qualifier": "_PID_0E_Ignition_Timing_Advance_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x0E"
+							},
+							{
+								"index": "24",
+								"data": "",
+								"desc": "油箱空气温度",
+								"engdesc": "Intake Air Temperature Request Freeze Frame",
+								"qualifier": "_PID_0F_Intake_Air_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x0F"
+							},
+							{
+								"index": "26",
+								"data": "",
+								"desc": "MAF空气流量速率",
+								"engdesc": "Air Flow Rate Request Freeze Frame",
+								"qualifier": "_PID_10_Air_Flow_Rate_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x10"
+							},
+							{
+								"index": "28",
+								"data": "",
+								"desc": "节气门位置",
+								"engdesc": "Absolute Throttle Position Request Freeze Frame",
+								"qualifier": "_PID_11_Absolute_Throttle_Position_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x11"
+							},
+							{
+								"index": "30",
+								"data": "",
+								"desc": "二次空气状态",
+								"engdesc": "Commanded Secondary Air Status Request Freeze Frame",
+								"qualifier": "_PID_12_Commanded_Secondary_Air_Status_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x12"
+							},
+							{
+								"index": "32",
+								"data": "",
+								"desc": "当前车辆OBD标准指示",
+								"engdesc": "OBD requirements for vehicle or engine Request Freeze Frame",
+								"qualifier": "_PID_1C_OBD_requirements_for_vehicle_or_engine_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x1C"
+							},
+							{
+								"index": "34",
+								"data": "",
+								"desc": "辅助输入状态",
+								"engdesc": "Auxiliary Input Status Request Freeze Frame",
+								"qualifier": "_PID_1E_Auxiliary_Input_Status_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x1E"
+							},
+							{
+								"index": "36",
+								"data": "",
+								"desc": "引擎启动后运行时间",
+								"engdesc": "Time Since Engine Start Request Freeze Frame",
+								"qualifier": "_PID_1F_Time_Since_Engine_Start_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x1F"
+							},
+							{
+								"index": "38",
+								"data": "",
+								"desc": "PID支持情况(21-40)",
+								"engdesc": "PID supported,$21-$40 Request Freeze Frame",
+								"qualifier": "_PID_20_PID_supported_21_40_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x20"
+							},
+							{
+								"index": "40",
+								"data": "",
+								"desc": "MIL灯点亮后车辆行驶的里程",
+								"engdesc": "Travel Distance While MIL Activated Request Freeze Frame",
+								"qualifier": "_PID_21_Travel_Distance_While_MIL_Activated_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x21"
+							},
+							{
+								"index": "42",
+								"data": "",
+								"desc": "油轨压力(相对于歧管真空度)",
+								"engdesc": "Fuel Rail Pressure Relative To Manifold Vacuum Request Freeze Frame",
+								"qualifier": "_PID_22_Fuel_Rail_Pressure_Relative_To_Manifold_Vacuum_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x22"
+							},
+							{
+								"index": "44",
+								"data": "",
+								"desc": "油轨压力(柴油或汽油直喷)",
+								"engdesc": "Fuel Rail Pressure Request Freeze Frame",
+								"qualifier": "_PID_23_Fuel_Rail_Pressure_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x23"
+							},
+							{
+								"index": "46",
+								"data": "",
+								"desc": "废气循环命令",
+								"engdesc": "Commanded EGR Request Freeze Frame",
+								"qualifier": "_PID_2C_Commanded_EGR_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x2C"
+							},
+							{
+								"index": "48",
+								"data": "",
+								"desc": "废气循环错误",
+								"engdesc": "EGR Error Request Freeze Frame",
+								"qualifier": "_PID_2D_EGR_Error_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x2D"
+							},
+							{
+								"index": "50",
+								"data": "",
+								"desc": "蒸发净化命令",
+								"engdesc": "Commanded Evaporative Purge Request Freeze Frame",
+								"qualifier": "_PID_2E_Commanded_Evaporative_Purge_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x2E"
+							},
+							{
+								"index": "52",
+								"data": "",
+								"desc": "油量液位情况",
+								"engdesc": "Fuel Level Input Request Freeze Frame",
+								"qualifier": "_PID_2F_Fuel_Level_Input_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x2F"
+							},
+							{
+								"index": "54",
+								"data": "",
+								"desc": "故障码被清除之后经历的暖机循环个数",
+								"engdesc": "Number of warm-ups since DTCs cleared Request Freeze Frame",
+								"qualifier": "_PID_30_Number_of_warm_ups_since_DTCs_cleared_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x30"
+							},
+							{
+								"index": "56",
+								"data": "",
+								"desc": "故障码清除后行驶里程",
+								"engdesc": "Distance since DTCs cleared Request Freeze Frame",
+								"qualifier": "_PID_31_Distance_since_DTCs_cleared_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x31"
+							},
+							{
+								"index": "58",
+								"data": "",
+								"desc": "系统蒸汽压力",
+								"engdesc": "Evap System Vapor Pressure Request Freeze Frame",
+								"qualifier": "_PID_32_Evap_System_Vapor_Pressure_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x32"
+							},
+							{
+								"index": "60",
+								"data": "",
+								"desc": "大气压",
+								"engdesc": "Barometric Pressure Request Freeze Frame",
+								"qualifier": "_PID_33_Barometric_Pressure_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x33"
+							},
+							{
+								"index": "62",
+								"data": "",
+								"desc": "催化剂温度(通道1，传感器1)",
+								"engdesc": "Catalyst Temp-Bank 1 Sensor 1 Request Freeze Frame",
+								"qualifier": "_PID_3C_Catalyst_Temp_Bank_1_Sensor_1_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x3C"
+							},
+							{
+								"index": "64",
+								"data": "",
+								"desc": "催化剂温度(通道2，传感器1)",
+								"engdesc": "Catalyst Temp-Bank 2 Sensor 1 Request Freeze Frame",
+								"qualifier": "_PID_3D_Catalyst_Temp_Bank_2_Sensor_1_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x3D"
+							},
+							{
+								"index": "66",
+								"data": "",
+								"desc": "催化剂温度(通道1，传感器2)",
+								"engdesc": "Catalyst Temp-Bank 1 Sensor 2 Request Freeze Frame",
+								"qualifier": "_PID_3E_Catalyst_Temp_Bank_1_Sensor_2_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "3E"
+							},
+							{
+								"index": "68",
+								"data": "",
+								"desc": "催化剂温度(通道2，传感器2)",
+								"engdesc": "Catalyst Temp-Bank 2 Sensor 2 Request Freeze Frame",
+								"qualifier": "_PID_3F_Catalyst_Temp_Bank_2_Sensor_2_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x3F"
+							},
+							{
+								"index": "70",
+								"data": "",
+								"desc": "PID支持请况(41-60)",
+								"engdesc": "PID supported,$41-$60 Request Freeze Frame",
+								"qualifier": "_PID_40_PID_supported_41_60_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x40"
+							},
+							{
+								"index": "72",
+								"data": "",
+								"desc": "本次行程监控状态",
+								"engdesc": "Enable status of supported monitors this monitoring cycle Request Freeze Frame",
+								"qualifier": "_PID_41_Enable_status_of_supported_monitors_this_monitoring_cycl_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x41"
+							},
+							{
+								"index": "74",
+								"data": "",
+								"desc": "控制模块电压",
+								"engdesc": "Control Module Voltage Request Freeze Frame",
+								"qualifier": "_PID_42_Control_Module_Voltage_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x42"
+							},
+							{
+								"index": "76",
+								"data": "",
+								"desc": "绝对载荷",
+								"engdesc": "Absolute Load Value Request Freeze Frame",
+								"qualifier": "_PID_43_Absolute_Load_Value_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x43"
+							},
+							{
+								"index": "78",
+								"data": "",
+								"desc": "等效比命令",
+								"engdesc": "Fuel/Air Commanded Equivalence Ratio Request Freeze Frame",
+								"qualifier": "_PID_44_Fuel_Air_Commanded_Equivalence_Ratio_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x44"
+							},
+							{
+								"index": "80",
+								"data": "",
+								"desc": "相对节气门位置",
+								"engdesc": "Relative Throttle Position Request Freeze Frame",
+								"qualifier": "_PID_45_Relative_Throttle_Position_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x45"
+							},
+							{
+								"index": "82",
+								"data": "",
+								"desc": "环境空气温度",
+								"engdesc": "PID supported,$41-$60 Request Freeze Frame",
+								"qualifier": "_PID_46_Ambient_Air_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x46"
+							},
+							{
+								"index": "84",
+								"data": "",
+								"desc": "绝对节气门位置B",
+								"engdesc": "Absolute Throttle Position B Request Freeze Frame",
+								"qualifier": "_PID_47_Absolute_Throttle_Position_B_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x47"
+							},
+							{
+								"index": "86",
+								"data": "",
+								"desc": "绝对节气门位置C",
+								"engdesc": "Absolute Throttle Position C Request Freeze Frame",
+								"qualifier": "_PID_48_Absolute_Throttle_Position_C_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x48"
+							},
+							{
+								"index": "88",
+								"data": "",
+								"desc": "加速踏板位置D",
+								"engdesc": "Accelerator Pedal Position D Request Freeze Frame",
+								"qualifier": "_PID_49_Accelerator_Pedal_Position_D_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x49"
+							},
+							{
+								"index": "90",
+								"data": "",
+								"desc": "加速踏板位置E",
+								"engdesc": "Accelerator Pedal Position E Request Freeze Frame",
+								"qualifier": "_PID_4A_Accelerator_Pedal_Position_E_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x4A"
+							},
+							{
+								"index": "92",
+								"data": "",
+								"desc": "加速踏板位置F",
+								"engdesc": "Accelerator Pedal Position F Request Freeze Frame",
+								"qualifier": "_PID_4B_Accelerator_Pedal_Position_F_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x4B"
+							},
+							{
+								"index": "94",
+								"data": "",
+								"desc": "油门执行器控制值",
+								"engdesc": "Commanded Throttle Actuator Control Request Freeze Frame",
+								"qualifier": "_PID_4C_Commanded_Throttle_Actuator_Control_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x4C"
+							},
+							{
+								"index": "96",
+								"data": "",
+								"desc": "MIL灯亮之后行驶时间",
+								"engdesc": "Engine run time while MIL activated Request Freeze Frame",
+								"qualifier": "_PID_4D_Engine_run_time_while_MIL_activated_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x4D"
+							},
+							{
+								"index": "98",
+								"data": "",
+								"desc": "故障码亮之后时间",
+								"engdesc": "Engine run time since DTCs cleared Request Freeze Frame",
+								"qualifier": "_PID_4E_Engine_run_time_since_DTCs_cleared_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x4E"
+							},
+							{
+								"index": "100",
+								"data": "",
+								"desc": "对于当量比、氧传感器电压、氧传感器电流和进气歧管绝对压力最大值",
+								"engdesc": "Maximun value for Intake Manifold Absolute Pressure Request Freeze Frame",
+								"qualifier": "_PID_4F_External_Test_Equipment_Configuration_Information_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x4F"
+							},
+							{
+								"index": "102",
+								"data": "",
+								"desc": "外部测试设备配置信息＃2",
+								"engdesc": "External Test Equipment Configuration Information #2 Request Freeze Frame",
+								"qualifier": "_PID_50_External_Test_Equipment_Configuration_Information_2_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x50"
+							},
+							{
+								"index": "104",
+								"data": "",
+								"desc": "油料类型",
+								"engdesc": "Type of fuel currently being utilized by the internal combustion engine Request Freeze Frame",
+								"qualifier": "_PID_51_Type_of_fuel_currently_being_utilized_by_the_internal_co_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x51"
+							},
+							{
+								"index": "106",
+								"data": "",
+								"desc": "乙醇百分比",
+								"engdesc": "Alcohol Fuel Percentage Request Freeze Frame",
+								"qualifier": "_PID_52_Alcohol_Fuel_Percentage_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x52"
+							},
+							{
+								"index": "108",
+								"data": "",
+								"desc": "绝对蒸汽系统压力",
+								"engdesc": "Absolute Evap System Vapor Pressure Request Freeze Frame",
+								"qualifier": "_PID_53_Absolute_Evap_System_Vapor_Pressure_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x53"
+							},
+							{
+								"index": "110",
+								"data": "",
+								"desc": "蒸汽系统压力",
+								"engdesc": "Evap System Vapor Pressure Request Freeze Frame",
+								"qualifier": "_PID_54_Evap_System_Vapor_Pressure_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x54"
+							},
+							{
+								"index": "112",
+								"data": "",
+								"desc": "绝对油轨压力",
+								"engdesc": "Fuel Rail Pressure(absolute)Request Freeze Frame",
+								"qualifier": "_PID_59_Fuel_Rail_Pressure_absolute_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x59"
+							},
+							{
+								"index": "114",
+								"data": "",
+								"desc": "相对加速踏板位置",
+								"engdesc": "Relative Accelerator Pedal Position Request Freeze Frame",
+								"qualifier": "_PID_5A_Relative_Accelerator_Pedal_Position_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x5A"
+							},
+							{
+								"index": "116",
+								"data": "",
+								"desc": "混合动力电池剩余",
+								"engdesc": "Hybrid Battery Pack Remaining Life Request Freeze Frame",
+								"qualifier": "_PID_5B_Hybrid_Battery_Pack_Remaining_Life_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x5B"
+							},
+							{
+								"index": "118",
+								"data": "",
+								"desc": "引擎油温",
+								"engdesc": "Engine Oil Temperature Request Freeze Frame",
+								"qualifier": "_PID_5C_Engine_Oil_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x5C"
+							},
+							{
+								"index": "120",
+								"data": "",
+								"desc": "油料注入时序",
+								"engdesc": "Fuel Injection Timing Request Freeze Frame",
+								"qualifier": "_PID_5D_Fuel_Injection_Timing_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x5D"
+							},
+							{
+								"index": "122",
+								"data": "",
+								"desc": "引擎油量消耗速率",
+								"engdesc": "Engine Fuel Rate Request Freeze Frame",
+								"qualifier": "_PID_5E_Engine_Fuel_Rate_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x5E"
+							},
+							{
+								"index": "124",
+								"data": "",
+								"desc": "设计排放要求",
+								"engdesc": "Emisson Requirements to which vehicle is designed Request Freeze Frame",
+								"qualifier": "_PID_5F_Emission_Requirements_to_which_vehicle_is_designed_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x5F"
+							},
+							{
+								"index": "126",
+								"data": "",
+								"desc": "PID支持情况(61-80)",
+								"engdesc": "PID supported,$61-$80 Request Freeze Frame",
+								"qualifier": "_PID_60_PID_supported_61_80_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x60"
+							},
+							{
+								"index": "128",
+								"data": "",
+								"desc": "驾驶者要求引擎的扭矩百分比",
+								"engdesc": "Driver's Demand Engine - Percent Torq Request Freeze Frame",
+								"qualifier": "_PID_61_Driver_s_Demand_Engine_Percent_Torq_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x61"
+							},
+							{
+								"index": "130",
+								"data": "",
+								"desc": "实际引擎扭矩百分比",
+								"engdesc": "Actual Engine - Percent Torq Request Freeze Frame",
+								"isIdInvalid": false,
+								"number": "0x62"
+							},
+							{
+								"index": "132",
+								"data": "",
+								"desc": "引擎参考扭矩",
+								"engdesc": "Engine Reference Torq Request Freeze Frame",
+								"qualifier": "_PID_63_Engine_Reference_Torq_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x63"
+							},
+							{
+								"index": "134",
+								"data": "",
+								"desc": "引擎扭矩百分比数据",
+								"engdesc": "Engine Percent Torq Data Request Freeze Frame",
+								"qualifier": "_PID_64_Engine_Percent_Torq_Data_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x64"
+							},
+							{
+								"index": "136",
+								"data": "",
+								"desc": "辅助输入输出支持",
+								"engdesc": "Auxiliary Inputs/Outputs Request Freeze Frame",
+								"qualifier": "_PID_65_Auxiliary_Inputs_Outputs_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x65"
+							},
+							{
+								"index": "138",
+								"data": "",
+								"desc": "大容量空气流量传感器",
+								"engdesc": "Mass Air Flows Sensor Request Freeze Frame",
+								"qualifier": "_PID_66_Mass_Air_Flow_Sensor_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x66"
+							},
+							{
+								"index": "140",
+								"data": "",
+								"desc": "引擎冷却液温度",
+								"engdesc": "Engine Coolant Temperature Request Freeze Frame",
+								"qualifier": "_PID_67_Engine_Coolant_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x67"
+							},
+							{
+								"index": "142",
+								"data": "",
+								"desc": "油箱空气温度传感器",
+								"engdesc": "Air Intake Temperature Sensor Request Freeze Frame",
+								"qualifier": "_PID_68_Air_Intake_Temperature_Sensor_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x68"
+							},
+							{
+								"index": "144",
+								"data": "",
+								"desc": "EGR命令和EGR错误",
+								"engdesc": "Commanded EGR and EGR Error Request Freeze Frame",
+								"qualifier": "_PID_69_Commanded_EGR_and_EGR_Error_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x69"
+							},
+							{
+								"index": "146",
+								"data": "",
+								"desc": "柴油机的进气流量控制命令和相对进气的流动的位置",
+								"engdesc": "Commanded Diesel Intake Air Flow Control and Relative Air Flow Position Request Freeze Frame",
+								"qualifier": "_PID_6A_Command_Diesel_Intake_Air_Flow_Control_and_Relative_Air__REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x6A"
+							},
+							{
+								"index": "148",
+								"data": "",
+								"desc": "排气回流温度",
+								"engdesc": "Exhaust Gas Recirculation Temperature Request Freeze Frame",
+								"qualifier": "_PID_6B_Exhaust_Gas_Recirculation_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x6B"
+							},
+							{
+								"index": "150",
+								"data": "",
+								"desc": "油门执行器控制命令和相对油门执行器位置",
+								"engdesc": "Commanded Throttle Actuator Control and Relative Throttle Position Throttle Position Request Freeze Frame",
+								"qualifier": "_PID_6C_Commanded_Throttle_Actuator_Control_and_Relative_Throt_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x6C"
+							},
+							{
+								"index": "152",
+								"data": "",
+								"desc": "油压控制系统",
+								"engdesc": "Fuel Pressure Control System Request Freeze Frame",
+								"qualifier": "_PID_6D_Fuel_Pressure_Control_System_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x6D"
+							},
+							{
+								"index": "154",
+								"data": "",
+								"desc": "注入压力控制系统",
+								"engdesc": "Injection Pressure Control System Request Freeze Frame",
+								"qualifier": "_PID_6E_Injection_Pressure_Control_System_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x6E"
+							},
+							{
+								"index": "156",
+								"data": "",
+								"desc": "涡轮增压器压缩机入口压力",
+								"engdesc": "Turbocharger Compressor Inlet Pressure Request Freeze Frame",
+								"qualifier": "_PID_6F_Turbocharger_Compressor_Inlet_Pressure_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x6F"
+							},
+							{
+								"index": "158",
+								"data": "",
+								"desc": "增压压力控制",
+								"engdesc": "Boost Pressure Control System Request Freeze Frame",
+								"qualifier": "_PID_70_Boost_Pressure_Control_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x70"
+							},
+							{
+								"index": "160",
+								"data": "",
+								"desc": "可变涡轮(VGT)控制",
+								"engdesc": "Variable Geometry Turbo(VGT)Control Request Freeze Frame",
+								"qualifier": "_PID_71_Variable_Geometry_Turbo_VGT_Control_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x71"
+							},
+							{
+								"index": "162",
+								"data": "",
+								"desc": "排气阀控制",
+								"engdesc": "Wastegate Control Request Freeze Frame",
+								"qualifier": "_PID_72_Wastegate_Control_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x72"
+							},
+							{
+								"index": "164",
+								"data": "",
+								"desc": "排气压力",
+								"engdesc": "Exhaust Pressure Request Freeze Frame",
+								"qualifier": "_PID_73_Exhaust_Pressure_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x73"
+							},
+							{
+								"index": "166",
+								"data": "",
+								"desc": "涡轮增压器转速",
+								"engdesc": "Turbocharger RPM Request Freeze Frame",
+								"qualifier": "_PID_74_Turbocharger_RPM_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x74"
+							},
+							{
+								"index": "168",
+								"data": "",
+								"desc": "涡轮增压器A温度",
+								"engdesc": "Turbocharger A Temperature Request Freeze Frame",
+								"qualifier": "_PID_75_Turbocharger_A_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x75"
+							},
+							{
+								"index": "170",
+								"data": "",
+								"desc": "涡轮增压器B温度",
+								"engdesc": "Turbocharger B Temperature Request Freeze Frame",
+								"qualifier": "_PID_76_Turbocharger_B_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x76"
+							},
+							{
+								"index": "172",
+								"data": "",
+								"desc": "增压空气冷却器的温度",
+								"engdesc": "Charge Air Cooler Temperature(CACT)Request Freeze Frame",
+								"qualifier": "_PID_77_Charge_Air_Cooler_Temperature_CACT_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x77"
+							},
+							{
+								"index": "174",
+								"data": "",
+								"desc": "废气温度 通道1",
+								"engdesc": "Exhaust Gas Temperature(EGT)Bank 1 Request Freeze Frame",
+								"qualifier": "_PID_78_Exhaust_Gas_Temperature_EGT_Bank_1_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x78"
+							},
+							{
+								"index": "176",
+								"data": "",
+								"desc": "废气温度 通道2",
+								"engdesc": "Exhaust Gas Temperature(EGT)Bank 2 Request Freeze Frame",
+								"qualifier": "_PID_79_Exhaust_Gas_Temperature_EGT_Bank_2_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x79"
+							},
+							{
+								"index": "178",
+								"data": "",
+								"desc": "柴油机微粒过滤器通道1",
+								"engdesc": "Particulate Filter(PF)Bank 1 Request Freeze Frame",
+								"qualifier": "_PID_7A_Particulate_Filter_PF_Bank_1_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x7A"
+							},
+							{
+								"index": "180",
+								"data": "",
+								"desc": "柴油机微粒过滤器通道2",
+								"engdesc": "Particulate Filter(PF)Bank 2 Request Freeze Frame",
+								"qualifier": "_PID_7B_Particulate_Filter_PF_Bank_2_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x7B"
+							},
+							{
+								"index": "182",
+								"data": "",
+								"desc": "柴油机微粒过滤器温度",
+								"engdesc": "Particulate Filter(PF)Temperature Request Freeze Frame",
+								"qualifier": "_PID_7C_Particulate_Filter_PF_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x7C"
+							},
+							{
+								"index": "184",
+								"data": "",
+								"desc": "NOX NTE (氮氧化物)控制区域状态",
+								"engdesc": "NOx NTE control area status Request Freeze Frame",
+								"qualifier": "_PID_7D_NOx_NTE_control_area_status_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x7D"
+							},
+							{
+								"index": "186",
+								"data": "",
+								"desc": "PM NTE控制区域状态",
+								"engdesc": "PM NTE control area status Request Freeze Frame",
+								"qualifier": "_PID_7E_PM_NTE_control_area_status_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x7E"
+							},
+							{
+								"index": "188",
+								"data": "",
+								"desc": "引擎工作时间",
+								"engdesc": "Engine Run Time Request Freeze Frame",
+								"qualifier": "_PID_7F_Engine_Run_Time_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x7F"
+							},
+							{
+								"index": "190",
+								"data": "",
+								"desc": "PID支持情况(81-A0)",
+								"engdesc": "PID supported,$81-$A0 Request Freeze Frame",
+								"qualifier": "_PID_80_PID_supported_81_A0_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x80"
+							},
+							{
+								"index": "192",
+								"data": "",
+								"desc": "辅助排放控置的发动机运转时间(AECD)",
+								"engdesc": "Engine Run Time for AECD 1-5 Request Freeze Frame",
+								"qualifier": "_PID_81_Engine_Run_Time_for_AECD_1_5_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x81"
+							},
+							{
+								"index": "194",
+								"data": "",
+								"desc": "辅助排放控置的发动机运转时间(AECD)",
+								"engdesc": "Engine Run Time for AECD 6-10 Request Freeze Frame",
+								"qualifier": "_PID_82_Engine_Run_Time_for_AECD_6_10_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x82"
+							},
+							{
+								"index": "196",
+								"data": "",
+								"desc": "NOX(氮氧化物)传感器",
+								"engdesc": "NOx Sensor Request Freeze Frame",
+								"qualifier": "_PID_83_NOx_Sensor_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x83"
+							},
+							{
+								"index": "198",
+								"data": "",
+								"desc": "歧管表面温度",
+								"engdesc": "Manifold Surface Temperature Request Freeze Frame",
+								"qualifier": "_PID_84_Manifold_Surface_Temperature_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x84"
+							},
+							{
+								"index": "200",
+								"data": "",
+								"desc": "NOX(氮氧化物)试剂系统",
+								"engdesc": "Nox Control System Request Freeze Frame",
+								"qualifier": "_PID_85_NOx_Control_System_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x85"
+							},
+							{
+								"index": "202",
+								"data": "",
+								"desc": "颗粒物(PM)传感器",
+								"engdesc": "Particulate Matter(PM)Sensor Request Freeze Frame",
+								"qualifier": "_PID_86_Particulate_Matter_PM_Sensor_REQUEST_PWRTRAIN_FREEZE_FRAME_DATA",
+								"isIdInvalid": false,
+								"number": "0x86"
+							}
+						]
+					}
+				]
+			},
+			{
+				"enable": true,
+				"id": "0x02",
+				"name": "动力总成诊断和冻结框架数据-如果支持PID $13",
+				"engName": "Powertrain Diagnostic and Freeze Frame Data -if PID $13 is supported",
+				"services": [
+						{
+							"sid": "0x01",
+							"servicename": "用于请求当前动力系统诊断数据",
+							"serviceengname": "Request Current Powertrain Diagnostic Data",
+							"subitems": [
+								{
+									"index": "271",
+									"data": "",
+									"desc": "短期燃油修正 通道1",
+									"engdesc": "Short Term Fuel Trim-Bank 1 Read current",
+									"qualifier": " _PID_06_Short_Term_Fuel_Trim_Bank_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x06"
+								},
+								{
+									"index": "273",
+									"data": "",
+									"desc": "长期燃油修正 通道1",
+									"engdesc": "Long Term Fuel Trim-Bank 1 Read current",
+									"qualifier": "_PID_07_Long_Term_Fuel_Trim_Bank_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x07"
+								},
+								{
+									"index": "275",
+									"data": "",
+									"desc": "短期燃油修正 通道2",
+									"engdesc": "Short Term Fuel Trim-Bank 2 Read current",
+									"qualifier": "_PID_08_Short_Term_Fuel_Trim_Bank_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x08"
+								},
+								{
+									"index": "277",
+									"data": "",
+									"desc": "长期燃油修正 通道2",
+									"engdesc": "Long Term Fuel Trim-Bank 2 Read current",
+									"qualifier": " _PID_09_Long_Term_Fuel_Trim_Bank_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x09"
+								},
+								{
+									"index": "279",
+									"data": "",
+									"desc": "氧传感器存在情况",
+									"engdesc": "Location of Oxygen Sensor Read current",
+									"qualifier": "_PID_13_Location_of_Oxygen_Sensor_Read_current",
+									"isIdInvalid": false,
+									"number": "0x13"
+								},
+								{
+									"index": "281",
+									"data": "",
+									"desc": "通道1，传感器1氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 1 Read current",
+									"qualifier": "_PID_14_Bank_1_Sensor_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x14"
+								},
+								{
+									"index": "283",
+									"data": "",
+									"desc": "通道1，传感器2氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 2 Read current",
+									"qualifier": "_PID_15_Bank_1_Sensor_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x15"
+								},
+								{
+									"index": "285",
+									"data": "",
+									"desc": "通道1，传感器3氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 3 Read current",
+									"qualifier": "_PID_16_Bank_1_Sensor_3_Read_current",
+									"isIdInvalid": false,
+									"number": "0x16"
+								},
+								{
+									"index": "287",
+									"data": "",
+									"desc": "通道1，传感器4氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 4 Read current",
+									"qualifier": "_PID_17_Bank_1_Sensor_4_Read_current",
+									"isIdInvalid": false,
+									"number": "0x17"
+								},
+								{
+									"index": "289",
+									"data": "",
+									"desc": "通道2，传感器1氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 1 Read current",
+									"qualifier": "_PID_18_Bank_2_Sensor_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x18"
+								},
+								{
+									"index": "291",
+									"data": "",
+									"desc": "通道2，传感器2氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 2 Read current",
+									"qualifier": "_PID_19_Bank_2_Sensor_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x19"
+								},
+								{
+									"index": "293",
+									"data": "",
+									"desc": "通道2，传感器3氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 3 Read current",
+									"qualifier": "_PID_1A_Bank_2_Sensor_3_Read_current",
+									"isIdInvalid": false,
+									"number": "0x1A"
+								},
+								{
+									"index": "295",
+									"data": "",
+									"desc": "通道2，传感器4氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 4 Read current",
+									"qualifier": "_PID_1B_Bank_2_Sensor_4_Read_current",
+									"isIdInvalid": false,
+									"number": "0x1B"
+								},
+								{
+									"index": "297",
+									"data": "",
+									"desc": "O2S1_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 1(wide range 02S)Read current",
+									"qualifier": "_PID_24_Bank_1_Sensor_1_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x24"
+								},
+								{
+									"index": "299",
+									"data": "",
+									"desc": "O2S2_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 2(wide range 02S)Read current",
+									"qualifier": "_PID_25_Bank_1_Sensor_2_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x25"
+								},
+								{
+									"index": "301",
+									"data": "",
+									"desc": "O2S3_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 3(wide range 02S)Read current",
+									"qualifier": "_PID_26_Bank_1_Sensor_3_for_1_or_2_banks_wide_range_O2S_Read_cur",
+									"isIdInvalid": false,
+									"number": "0x26"
+								},
+								{
+									"index": "303",
+									"data": "",
+									"desc": "O2S4_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 4[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_27_Bank_1_Sensor_4_for_1_or_2_banks_wide_range_O2S_Read_cur",
+									"isIdInvalid": false,
+									"number": "0x27"
+								},
+								{
+									"index": "305",
+									"data": "",
+									"desc": "O2S5_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 1[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_28_Bank_2_Sensor_1_for_1_or_2_banks_wide_range_O2S_Read_cur",
+									"isIdInvalid": false,
+									"number": "0x28"
+								},
+								{
+									"index": "307",
+									"data": "",
+									"desc": "O2S6_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 2[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_29_Bank_2_Sensor_2_for_1_or_2_banks_wide_range_O2S_Read_cur",
+									"isIdInvalid": false,
+									"number": "0x29"
+								},
+								{
+									"index": "309",
+									"data": "",
+									"desc": "O2S7_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 3[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_2A_Bank_4_Sensor_1_wide_range_O2S_Read_current_if_PID_1D_is",
+									"isIdInvalid": false,
+									"number": "0x2A"
+								},
+								{
+									"index": "311",
+									"data": "",
+									"desc": "O2S8_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 4[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_2B_Bank_4_Sensor_2_wide_range_O2S_Read_current_if_PID_1D_is",
+									"isIdInvalid": false,
+									"number": "0x2B"
+								},
+								{
+									"index": "313",
+									"data": "",
+									"desc": "O2S1_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 1(wide range 02S)Read current",
+									"qualifier": "_PID_34_Bank_1_Sensor_1_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x34"
+								},
+								{
+									"index": "315",
+									"data": "",
+									"desc": "O2S2_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 2(wide range 02S)Read current",
+									"qualifier": "_PID_35_Bank_1_Sensor_2_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x35"
+								},
+								{
+									"index": "317",
+									"data": "",
+									"desc": "O2S3_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 3(wide range 02S)Read current",
+									"qualifier": "_PID_36_Bank_1_Sensor_3_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x36"
+								},
+								{
+									"index": "319",
+									"data": "",
+									"desc": "O2S4_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 4(wide range 02S)Read current",
+									"qualifier": "_PID_37_Bank_1_Sensor_4_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x37"
+								},
+								{
+									"index": "321",
+									"data": "",
+									"desc": "O2S5_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 1(wide range 02S)Read current",
+									"qualifier": "_PID_38_Bank_2_Sensor_1_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x38"
+								},
+								{
+									"index": "323",
+									"data": "",
+									"desc": "O2S6_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 2(wide range 02S)Read current",
+									"qualifier": "_PID_39_Bank_2_Sensor_2_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x39"
+								},
+								{
+									"index": "325",
+									"data": "",
+									"desc": "O2S7_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 3(wide range 02S)Read current",
+									"qualifier": "_PID_3A_Bank_2_Sensor_3_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x3A"
+								},
+								{
+									"index": "327",
+									"data": "",
+									"desc": "O2S8_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 4(wide range 02S)Read current",
+									"qualifier": "_PID_3B_Bank_2_Sensor_4_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x3B"
+								},
+								{
+									"index": "329",
+									"data": "",
+									"desc": "短期二次氧传感器微调组1和组3",
+									"engdesc": "Short Term Secondary O2 Sensor Fuel Trim-Bank 1,3 Read current",
+									"qualifier": "_PID_55_Short_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x55"
+								},
+								{
+									"index": "331",
+									"data": "",
+									"desc": "长期二次氧传感器微调组1和组3",
+									"engdesc": "Long Term Secondary O2 Sensor Fuel Trim-Bank 1,3 Read current",
+									"qualifier": "_PID_56_Long_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x56"
+								},
+								{
+									"index": "333",
+									"data": "",
+									"desc": "短期二次氧传感器微调组2和组4",
+									"engdesc": "Short Term Secondary O2 Sensor Fuel Trim-Bank 2,4 Read current",
+									"qualifier": "_PID_57_Short_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x57"
+								},
+								{
+									"index": "335",
+									"data": "",
+									"desc": "长期二次氧传感器微调组2和组4",
+									"engdesc": "Long Term Secondary O2 Sensor Fuel Trim-Bank 2,4 Read current",
+									"qualifier": "_PID_58_Long_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x58"
+								}
+							]
+						},
+						{
+							"sid": "0x02",
+							"servicename": "用于请求动力系统冻结帧数据",
+							"serviceengname": "Request Powertrain Freeze Frame Data",
+							"subitems": [
+								{
+									"index": "272",
+									"data": "",
+									"desc": "短期燃油修正 通道1",
+									"engdesc": "Short Term Fuel Trim-Bank 1 Request Freeze Frame",
+									"qualifier": "_PID_06_Short_Term_Fuel_Trim_Bank_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x06"
+								},
+								{
+									"index": "274",
+									"data": "",
+									"desc": "长期燃油修正 通道1",
+									"engdesc": "Long Term Fuel Trim-Bank 1 Request Freeze Frame",
+									"qualifier": "_PID_07_Long_Term_Fuel_Trim_Bank_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x07"
+								},
+								{
+									"index": "276",
+									"data": "",
+									"desc": "短期燃油修正 通道2",
+									"engdesc": "Short Term Fuel Trim-Bank 2 Request Freeze Frame",
+									"qualifier": "_PID_08_Short_Term_Fuel_Trim_Bank_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x08"
+								},
+								{
+									"index": "278",
+									"data": "",
+									"desc": "长期燃油修正 通道2",
+									"engdesc": "Long Term Fuel Trim-Bank 2 Request Freeze Frame",
+									"qualifier": "_PID_09_Long_Term_Fuel_Trim_Bank_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x09"
+								},
+								{
+									"index": "280",
+									"data": "",
+									"desc": "氧传感器存在情况",
+									"engdesc": "Location of Oxygen Sensor Request Freeze Frame",
+									"qualifier": "_PID_13_Location_of_Oxygen_Sensor_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x13"
+								},
+								{
+									"index": "282",
+									"data": "",
+									"desc": "通道1，传感器1氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 1 Request Freeze Frame",
+									"qualifier": "_PID_14_Bank_1_Sensor_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x14"
+								},
+								{
+									"index": "284",
+									"data": "",
+									"desc": "通道1，传感器2氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 2 Request Freeze Frame",
+									"qualifier": "_PID_15_Bank_1_Sensor_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x15"
+								},
+								{
+									"index": "286",
+									"data": "",
+									"desc": "通道1，传感器3氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 3 Request Freeze Frame",
+									"qualifier": "_PID_16_Bank_1_Sensor_3_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x16"
+								},
+								{
+									"index": "288",
+									"data": "",
+									"desc": "通道1，传感器4氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 4 Request Freeze Frame",
+									"qualifier": "_PID_17_Bank_1_Sensor_4_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x17"
+								},
+								{
+									"index": "290",
+									"data": "",
+									"desc": "通道2，传感器1氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 1 Request Freeze Frame",
+									"qualifier": "_PID_18_Bank_2_Sensor_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x18"
+								},
+								{
+									"index": "292",
+									"data": "",
+									"desc": "通道2，传感器2氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 2 Request Freeze Frame",
+									"qualifier": "_PID_19_Bank_2_Sensor_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x19"
+								},
+								{
+									"index": "294",
+									"data": "",
+									"desc": "通道2，传感器3氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 3 Request Freeze Frame",
+									"qualifier": "_PID_1A_Bank_2_Sensor_3_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x1A"
+								},
+								{
+									"index": "296",
+									"data": "",
+									"desc": "通道2，传感器4氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 4 Request Freeze Frame",
+									"qualifier": "_PID_1B_Bank_2_Sensor_4_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x1B"
+								},
+								{
+									"index": "298",
+									"data": "",
+									"desc": "O2S1_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 1(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_24_Bank_1_Sensor_1_wide_range_O2S_Request_Freeze_Frame_if_P",
+									"isIdInvalid": false,
+									"number": "0x24"
+								},
+								{
+									"index": "300",
+									"data": "",
+									"desc": "O2S2_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 2(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_25_Bank_1_Sensor_2_wide_range_O2S_Request_Freeze_Frame_if_P",
+									"isIdInvalid": false,
+									"number": "0x25"
+								},
+								{
+									"index": "302",
+									"data": "",
+									"desc": "O2S3_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 3(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_26_Bank_1_Sensor_3_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x26"
+								},
+								{
+									"index": "304",
+									"data": "",
+									"desc": "O2S4_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 4[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_27_Bank_1_Sensor_4_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x27"
+								},
+								{
+									"index": "306",
+									"data": "",
+									"desc": "O2S5_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 1[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_28_Bank_2_Sensor_1_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x28"
+								},
+								{
+									"index": "308",
+									"data": "",
+									"desc": "O2S6_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 2[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_29_Bank_2_Sensor_2_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x29"
+								},
+								{
+									"index": "310",
+									"data": "",
+									"desc": "O2S7_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 3[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_2A_Bank_2_Sensor_3_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x2A"
+								},
+								{
+									"index": "312",
+									"data": "",
+									"desc": "O2S8_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 4[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_2B_Bank_2_Sensor_4_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x2B"
+								},
+								{
+									"index": "314",
+									"data": "",
+									"desc": "O2S1_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 1(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_34_Bank_1_Sensor_1_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x34"
+								},
+								{
+									"index": "316",
+									"data": "",
+									"desc": "O2S2_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 2(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_35_Bank_1_Sensor_2_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x35"
+								},
+								{
+									"index": "318",
+									"data": "",
+									"desc": "O2S3_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 3(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_36_Bank_1_Sensor_3_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x36"
+								},
+								{
+									"index": "320",
+									"data": "",
+									"desc": "O2S4_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 4(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_37_Bank_1_Sensor_4_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x37"
+								},
+								{
+									"index": "322",
+									"data": "",
+									"desc": "O2S5_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 1(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_38_Bank_2_Sensor_1_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x38"
+								},
+								{
+									"index": "324",
+									"data": "",
+									"desc": "O2S6_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 2(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_39_Bank_2_Sensor_2_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x39"
+								},
+								{
+									"index": "326",
+									"data": "",
+									"desc": "O2S7_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 3(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_3A_Bank_2_Sensor_3_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x3A"
+								},
+								{
+									"index": "328",
+									"data": "",
+									"desc": "O2S8_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 4(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_3B_Bank_2_Sensor_4_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x3B"
+								},
+								{
+									"index": "330",
+									"data": "",
+									"desc": "短期二次氧传感器微调组1和组3",
+									"engdesc": "Short Term Secondary O2 Sensor Fuel Trim-Bank 1,3 Request Freeze Frame",
+									"qualifier": "_PID_55_Short_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x55"
+								},
+								{
+									"index": "332",
+									"data": "",
+									"desc": "长期二次氧传感器微调组1和组3",
+									"engdesc": "Long Term Secondary O2 Sensor Fuel Trim-Bank 1,3 Request Freeze Frame",
+									"qualifier": "_PID_56_Long_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x56"
+								},
+								{
+									"index": "334",
+									"data": "",
+									"desc": "短期二次氧传感器微调组2和组4",
+									"engdesc": "Short Term Secondary O2 Sensor Fuel Trim-Bank 2,4 Request Freeze Frame",
+									"qualifier": "_PID_57_Short_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x57"
+								},
+								{
+									"index": "336",
+									"data": "",
+									"desc": "长期二次氧传感器微调组2和组4",
+									"engdesc": "Long Term Secondary O2 Sensor Fuel Trim-Bank 2,4 Request Freeze Frame",
+									"qualifier": "_PID_58_Long_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x58"
+								}
+							]
+						}
+					]	
+			},
+			{
+				"enable": true,
+				"id": "0x03",
+				"name": "动力总成诊断和冻结数据-如果支持PID $1D",
+				"engName": "Powertrain Diagnostic and Freeze Data -if PID $1D is supported",
+				"services": [
+						{
+							"sid": "0x01",
+							"servicename": "用于请求当前动力系统诊断数据",
+							"serviceengname": "Request Current Powertrain Diagnostic Data",
+							"subitems": [
+								{
+									"index": "337",
+									"data": "",
+									"desc": "短期燃油修正 通道1",
+									"engdesc": "Short Term Fuel Trim-Bank 1 Read current",
+									"qualifier": " _PID_06_Short_Term_Fuel_Trim_Bank_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x06"
+								},
+								{
+									"index": "339",
+									"data": "",
+									"desc": "长期燃油修正 通道1",
+									"engdesc": "Long Term Fuel Trim-Bank 1 Read current",
+									"qualifier": "_PID_07_Long_Term_Fuel_Trim_Bank_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x07"
+								},
+								{
+									"index": "341",
+									"data": "",
+									"desc": "短期燃油修正 通道2",
+									"engdesc": "Short Term Fuel Trim-Bank 2 Read current",
+									"qualifier": "_PID_08_Short_Term_Fuel_Trim_Bank_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x08"
+								},
+								{
+									"index": "343",
+									"data": "",
+									"desc": "长期燃油修正 通道2",
+									"engdesc": "Long Term Fuel Trim-Bank 2 Read current",
+									"qualifier": " _PID_09_Long_Term_Fuel_Trim_Bank_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x09"
+								},
+								{
+									"index": "345",
+									"data": "",
+									"desc": "通道1，传感器1氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 1 Read current",
+									"qualifier": "_PID_14_Bank_1_Sensor_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x14"
+								},
+								{
+									"index": "347",
+									"data": "",
+									"desc": "通道1，传感器2氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 2 Read current",
+									"qualifier": "_PID_15_Bank_1_Sensor_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x15"
+								},
+								{
+									"index": "349",
+									"data": "",
+									"desc": "通道1，传感器3氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 3 Read current",
+									"qualifier": "_PID_16_Bank_1_Sensor_3_Read_current",
+									"isIdInvalid": false,
+									"number": "0x16"
+								},
+								{
+									"index": "351",
+									"data": "",
+									"desc": "通道1，传感器4氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 4 Read current",
+									"qualifier": "_PID_17_Bank_1_Sensor_4_Read_current",
+									"isIdInvalid": false,
+									"number": "0x17"
+								},
+								{
+									"index": "353",
+									"data": "",
+									"desc": "通道2，传感器1氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 1 Read current",
+									"qualifier": "_PID_18_Bank_2_Sensor_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x18"
+								},
+								{
+									"index": "355",
+									"data": "",
+									"desc": "通道2，传感器2氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 2 Read current",
+									"qualifier": "_PID_19_Bank_2_Sensor_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x19"
+								},
+								{
+									"index": "357",
+									"data": "",
+									"desc": "通道2，传感器3氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 3 Read current",
+									"qualifier": "_PID_1A_Bank_2_Sensor_3_Read_current",
+									"isIdInvalid": false,
+									"number": "0x1A"
+								},
+								{
+									"index": "359",
+									"data": "",
+									"desc": "通道2，传感器4氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 4 Read current",
+									"qualifier": "_PID_1B_Bank_2_Sensor_4_Read_current",
+									"isIdInvalid": false,
+									"number": "0x1B"
+								},
+								{
+									"index": "361",
+									"data": "",
+									"desc": "氧传感器存在情况",
+									"engdesc": "Location of Oxygen Sensor Read current",
+									"qualifier": "_PID_1D_Location_of_Oxygen_Sensor_Read_current",
+									"isIdInvalid": false,
+									"number": "0x1D"
+								},
+								{
+									"index": "363",
+									"data": "",
+									"desc": "O2S1_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 1(wide range 02S)Read current",
+									"qualifier": "_PID_24_Bank_1_Sensor_1_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x24"
+								},
+								{
+									"index": "365",
+									"data": "",
+									"desc": "O2S2_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 2(wide range 02S)Read current",
+									"qualifier": "_PID_25_Bank_1_Sensor_2_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x25"
+								},
+								{
+									"index": "367",
+									"data": "",
+									"desc": "O2S3_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 3(wide range 02S)Read current",
+									"qualifier": "_PID_26_Bank_1_Sensor_3_for_1_or_2_banks_wide_range_O2S_Read_cur",
+									"isIdInvalid": false,
+									"number": "0x26"
+								},
+								{
+									"index": "369",
+									"data": "",
+									"desc": "O2S4_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 4[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_27_Bank_1_Sensor_4_for_1_or_2_banks_wide_range_O2S_Read_cur",
+									"isIdInvalid": false,
+									"number": "0x27"
+								},
+								{
+									"index": "371",
+									"data": "",
+									"desc": "O2S5_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 1[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_28_Bank_2_Sensor_1_for_1_or_2_banks_wide_range_O2S_Read_cur",
+									"isIdInvalid": false,
+									"number": "0x28"
+								},
+								{
+									"index": "373",
+									"data": "",
+									"desc": "O2S6_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 2[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_29_Bank_2_Sensor_2_for_1_or_2_banks_wide_range_O2S_Read_cur",
+									"isIdInvalid": false,
+									"number": "0x29"
+								},
+								{
+									"index": "375",
+									"data": "",
+									"desc": "O2S7_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 3[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_2A_Bank_4_Sensor_1_wide_range_O2S_Read_current_if_PID_1D_is",
+									"isIdInvalid": false,
+									"number": "0x2A"
+								},
+								{
+									"index": "377",
+									"data": "",
+									"desc": "O2S8_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 4[for 1 or 2 banks](wide range 02S)Read current",
+									"qualifier": "_PID_2B_Bank_4_Sensor_2_wide_range_O2S_Read_current_if_PID_1D_is",
+									"isIdInvalid": false,
+									"number": "0x2B"
+								},
+								{
+									"index": "379",
+									"data": "",
+									"desc": "O2S1_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 1(wide range 02S)Read current",
+									"qualifier": "_PID_34_Bank_1_Sensor_1_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x34"
+								},
+								{
+									"index": "381",
+									"data": "",
+									"desc": "O2S2_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 2(wide range 02S)Read current",
+									"qualifier": "_PID_35_Bank_1_Sensor_2_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x35"
+								},
+								{
+									"index": "383",
+									"data": "",
+									"desc": "O2S3_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 3(wide range 02S)Read current",
+									"qualifier": "_PID_36_Bank_1_Sensor_3_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x36"
+								},
+								{
+									"index": "385",
+									"data": "",
+									"desc": "O2S4_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 4(wide range 02S)Read current",
+									"qualifier": "_PID_37_Bank_1_Sensor_4_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x37"
+								},
+								{
+									"index": "387",
+									"data": "",
+									"desc": "O2S5_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 1(wide range 02S)Read current",
+									"qualifier": "_PID_38_Bank_2_Sensor_1_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x38"
+								},
+								{
+									"index": "389",
+									"data": "",
+									"desc": "O2S6_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 2(wide range 02S)Read current",
+									"qualifier": "_PID_39_Bank_2_Sensor_2_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x39"
+								},
+								{
+									"index": "391",
+									"data": "",
+									"desc": "O2S7_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 3(wide range 02S)Read current",
+									"qualifier": "_PID_3A_Bank_2_Sensor_3_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x3A"
+								},
+								{
+									"index": "393",
+									"data": "",
+									"desc": "O2S8_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 4(wide range 02S)Read current",
+									"qualifier": "_PID_3B_Bank_2_Sensor_4_wide_range_O2S_Read_current_if_PID_13_is",
+									"isIdInvalid": false,
+									"number": "0x3B"
+								},
+								{
+									"index": "395",
+									"data": "",
+									"desc": "短期二次氧传感器微调组1和组3",
+									"engdesc": "Short Term Secondary O2 Sensor Fuel Trim-Bank 1,3 Read current",
+									"qualifier": "_PID_55_Short_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x55"
+								},
+								{
+									"index": "397",
+									"data": "",
+									"desc": "长期二次氧传感器微调组1和组3",
+									"engdesc": "Long Term Secondary O2 Sensor Fuel Trim-Bank 1,3 Read current",
+									"qualifier": "_PID_56_Long_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_1_Read_current",
+									"isIdInvalid": false,
+									"number": "0x56"
+								},
+								{
+									"index": "399",
+									"data": "",
+									"desc": "短期二次氧传感器微调组2和组4",
+									"engdesc": "Short Term Secondary O2 Sensor Fuel Trim-Bank 2,4 Read current",
+									"qualifier": "_PID_57_Short_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x57"
+								},
+								{
+									"index": "401",
+									"data": "",
+									"desc": "长期二次氧传感器微调组2和组4",
+									"engdesc": "Long Term Secondary O2 Sensor Fuel Trim-Bank 2,4 Read current",
+									"qualifier": "_PID_58_Long_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_2_Read_current",
+									"isIdInvalid": false,
+									"number": "0x58"
+								}
+							]
+						},
+						{
+							"sid": "0x02",
+							"servicename": "用于请求动力系统冻结帧数据",
+							"serviceengname": "Request Powertrain Freeze Frame Data",
+							"subitems": [
+								{
+									"index": "338",
+									"data": "",
+									"desc": "短期燃油修正 通道1",
+									"engdesc": "Short Term Fuel Trim-Bank 1 Request Freeze Frame",
+									"qualifier": "_PID_06_Short_Term_Fuel_Trim_Bank_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x06"
+								},
+								{
+									"index": "340",
+									"data": "",
+									"desc": "长期燃油修正 通道1",
+									"engdesc": "Long Term Fuel Trim-Bank 1 Request Freeze Frame",
+									"qualifier": "_PID_07_Long_Term_Fuel_Trim_Bank_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x07"
+								},
+								{
+									"index": "342",
+									"data": "",
+									"desc": "短期燃油修正 通道2",
+									"engdesc": "Short Term Fuel Trim-Bank 2 Request Freeze Frame",
+									"qualifier": "_PID_08_Short_Term_Fuel_Trim_Bank_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x08"
+								},
+								{
+									"index": "344",
+									"data": "",
+									"desc": "长期燃油修正 通道2",
+									"engdesc": "Long Term Fuel Trim-Bank 2 Request Freeze Frame",
+									"qualifier": "_PID_09_Long_Term_Fuel_Trim_Bank_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x09"
+								},
+								{
+									"index": "346",
+									"data": "",
+									"desc": "通道1，传感器1氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 1 Request Freeze Frame",
+									"qualifier": "_PID_14_Bank_1_Sensor_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x14"
+								},
+								{
+									"index": "348",
+									"data": "",
+									"desc": "通道1，传感器2氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 2 Request Freeze Frame",
+									"qualifier": "_PID_15_Bank_1_Sensor_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x15"
+								},
+								{
+									"index": "350",
+									"data": "",
+									"desc": "通道1，传感器3氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 3 Request Freeze Frame",
+									"qualifier": "_PID_16_Bank_1_Sensor_3_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x16"
+								},
+								{
+									"index": "352",
+									"data": "",
+									"desc": "通道1，传感器4氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 1-Sensor 4 Request Freeze Frame",
+									"qualifier": "_PID_17_Bank_1_Sensor_4_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x17"
+								},
+								{
+									"index": "354",
+									"data": "",
+									"desc": "通道2，传感器1氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 1 Request Freeze Frame",
+									"qualifier": "_PID_18_Bank_2_Sensor_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x18"
+								},
+								{
+									"index": "356",
+									"data": "",
+									"desc": "通道2，传感器2氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 2 Request Freeze Frame",
+									"qualifier": "_PID_19_Bank_2_Sensor_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x19"
+								},
+								{
+									"index": "358",
+									"data": "",
+									"desc": "通道2，传感器3氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 3 Request Freeze Frame",
+									"qualifier": "_PID_1A_Bank_2_Sensor_3_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x1A"
+								},
+								{
+									"index": "360",
+									"data": "",
+									"desc": "通道2，传感器4氧传感器电压短期燃油修正(氧传感器电压)",
+									"engdesc": "Bank 2-Sensor 4 Request Freeze Frame",
+									"qualifier": "_PID_1B_Bank_2_Sensor_4_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x1B"
+								},
+								{
+									"index": "362",
+									"data": "",
+									"desc": "氧传感器存在情况",
+									"engdesc": "Location of Oxygen Sensor Request Freeze Frame",
+									"qualifier": "_PID_1D_Location_of_Oxygen_Sensor_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x1D"
+								},	
+								{
+									"index": "364",
+									"data": "",
+									"desc": "O2S1_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 1(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_24_Bank_1_Sensor_1_wide_range_O2S_Request_Freeze_Frame_if_P",
+									"isIdInvalid": false,
+									"number": "0x24"
+								},
+								{
+									"index": "366",
+									"data": "",
+									"desc": "O2S2_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 2(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_25_Bank_1_Sensor_2_wide_range_O2S_Request_Freeze_Frame_if_P",
+									"isIdInvalid": false,
+									"number": "0x25"
+								},
+								{
+									"index": "368",
+									"data": "",
+									"desc": "O2S3_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 3(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_26_Bank_1_Sensor_3_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x26"
+								},
+								{
+									"index": "370",
+									"data": "",
+									"desc": "O2S4_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 1-Sensor 4[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_27_Bank_1_Sensor_4_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x27"
+								},
+								{
+									"index": "372",
+									"data": "",
+									"desc": "O2S5_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 1[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_28_Bank_2_Sensor_1_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x28"
+								},
+								{
+									"index": "374",
+									"data": "",
+									"desc": "O2S6_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 2[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_29_Bank_2_Sensor_2_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x29"
+								},
+								{
+									"index": "376",
+									"data": "",
+									"desc": "O2S7_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 3[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_2A_Bank_2_Sensor_3_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x2A"
+								},
+								{
+									"index": "378",
+									"data": "",
+									"desc": "O2S8_WR_lambda(1):线性或宽带式氧传感器的等效比(lambda)和电压",
+									"engdesc": "Bank 2-Sensor 4[for 1 or 2 banks](wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_2B_Bank_2_Sensor_4_for_1_or_2_banks_wide_range_O2S_Request_",
+									"isIdInvalid": false,
+									"number": "0x2B"
+								},
+								{
+									"index": "380",
+									"data": "",
+									"desc": "O2S1_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 1(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_34_Bank_1_Sensor_1_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x34"
+								},
+								{
+									"index": "382",
+									"data": "",
+									"desc": "O2S2_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 2(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_35_Bank_1_Sensor_2_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x35"
+								},
+								{
+									"index": "384",
+									"data": "",
+									"desc": "O2S3_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 3(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_36_Bank_1_Sensor_3_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x36"
+								},
+								{
+									"index": "386",
+									"data": "",
+									"desc": "O2S4_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 1-Sensor 4(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_37_Bank_1_Sensor_4_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x37"
+								},
+								{
+									"index": "388",
+									"data": "",
+									"desc": "O2S5_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 1(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_38_Bank_2_Sensor_1_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x38"
+								},
+								{
+									"index": "390",
+									"data": "",
+									"desc": "O2S6_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 2(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_39_Bank_2_Sensor_2_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x39"
+								},
+								{
+									"index": "392",
+									"data": "",
+									"desc": "O2S7_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 3(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_3A_Bank_2_Sensor_3_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x3A"
+								},
+								{
+									"index": "394",
+									"data": "",
+									"desc": "O2S8_WR_lambda(1):线性或宽带氧传感器的等效比(lambda)和电流",
+									"engdesc": "Bank 2-Sensor 4(wide range 02S)Request Freeze Frame",
+									"qualifier": "_PID_3B_Bank_2_Sensor_4_wide_range_O2S_Request_if_PID13",
+									"isIdInvalid": false,
+									"number": "0x3B"
+								},
+								{
+									"index": "396",
+									"data": "",
+									"desc": "短期二次氧传感器微调组1和组3",
+									"engdesc": "Short Term Secondary O2 Sensor Fuel Trim-Bank 1,3 Request Freeze Frame",
+									"qualifier": "_PID_55_Short_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x55"
+								},
+								{
+									"index": "398",
+									"data": "",
+									"desc": "长期二次氧传感器微调组1和组3",
+									"engdesc": "Long Term Secondary O2 Sensor Fuel Trim-Bank 1,3 Request Freeze Frame",
+									"qualifier": "_PID_56_Long_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_1_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x56"
+								},
+								{
+									"index": "400",
+									"data": "",
+									"desc": "短期二次氧传感器微调组2和组4",
+									"engdesc": "Short Term Secondary O2 Sensor Fuel Trim-Bank 2,4 Request Freeze Frame",
+									"qualifier": "_PID_57_Short_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x57"
+								},
+								{
+									"index": "402",
+									"data": "",
+									"desc": "长期二次氧传感器微调组2和组4",
+									"engdesc": "Long Term Secondary O2 Sensor Fuel Trim-Bank 2,4 Request Freeze Frame",
+									"qualifier": "_PID_58_Long_Term_Secondary_O2_Sensor_Fuel_Trim_Bank_2_Request_Freeze_Frame",
+									"isIdInvalid": false,
+									"number": "0x58"
+								}
+							]
+						}
+					]
+			},
+			{
+				"enable": true,
+				"id": "0x04",
+				"name": "请求特定受监视系统的机载监视测试结果",
+				"engName": "Request On-Board Monitoring Test Results For Specific Monitored System",
+				"services": [
+					{
+						"sid": "0x06",
+						"servicename": "特殊监控系统的请求车载监控试验结果",
+						"serviceengname": "Request On-Board Monitoring Test Results for Specific Monitored Systems",
+						"subitems": [
+							{
+								"index": "403",
+								"data": "",
+								"desc": "MID支持情况(01-20)",
+								"engdesc": "OBD MIDs $01-$20 supported Request OnBoard Monitoring Test Results-Read Supported",
+								"qualifier": "_OBDMID_00_OBD_MIDs_01_20_supported_Request_OnBoard_Monitoring_Test_Results_Read_Supported",
+								"isIdInvalid": false,
+								"number": "0x00"
+							},
+							{
+								"index": "404",
+								"data": "",
+								"desc": "氧气传感器1部分- 传感器1",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 1-Sensor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_01_Exhaust_Gas_Sensor_Monitor_Bank_1_Sensor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x01"
+							},
+							{
+								"index": "405",
+								"data": "",
+								"desc": "氧气传感器1部分- 传感器2",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 1-Sensor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_02_Exhaust_Gas_Sensor_Monitor_Bank_1_Sensor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x02"
+							},
+							{
+								"index": "406",
+								"data": "",
+								"desc": "氧气传感器1部分- 传感器3",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 1-Sensor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_03_Exhaust_Gas_Sensor_Monitor_Bank_1_Sensor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x03"
+							},
+							{
+								"index": "407",
+								"data": "",
+								"desc": "氧气传感器1部分- 传感器4",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 1-Sensor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_04_Exhaust_Gas_Sensor_Monitor_Bank_1_Sensor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x04"
+							},
+							{
+								"index": "408",
+								"data": "",
+								"desc": "氧气传感器2部分- 传感器1",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 2-Sensor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_05_Exhaust_Gas_Sensor_Monitor_Bank_2_Sensor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x05"
+							},
+							{
+								"index": "409",
+								"data": "",
+								"desc": "氧气传感器2部分- 传感器2",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 2-Sensor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_06_Exhaust_Gas_Sensor_Monitor_Bank_2_Sensor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x06"
+							},
+							{
+								"index": "410",
+								"data": "",
+								"desc": "氧气传感器2部分- 传感器3",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 2-Sensor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_07_Exhaust_Gas_Sensor_Monitor_Bank_2_Sensor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x07"
+							},
+							{
+								"index": "411",
+								"data": "",
+								"desc": "氧气传感器2部分- 传感器4",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 2-Sensor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_08_Exhaust_Gas_Sensor_Monitor_Bank_2_Sensor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x08"
+							},
+							{
+								"index": "412",
+								"data": "",
+								"desc": "氧气传感器3部分- 传感器1",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 3-Sensor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_09_Exhaust_Gas_Sensor_Monitor_Bank_3_Sensor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x09"
+							},
+							{
+								"index": "413",
+								"data": "",
+								"desc": "氧气传感器3部分- 传感器2",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 3-Sensor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_0A_Exhaust_Gas_Sensor_Monitor_Bank_3_Sensor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x0A"
+							},
+							{
+								"index": "414",
+								"data": "",
+								"desc": "氧气传感器3部分- 传感器3",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 3-Sensor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_0B_Exhaust_Gas_Sensor_Monitor_Bank_3_Sensor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x0B"
+							},
+							{
+								"index": "415",
+								"data": "",
+								"desc": "氧气传感器3部分- 传感器4",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 3-Sensor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_0C_Exhaust_Gas_Sensor_Monitor_Bank_3_Sensor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x0C"
+							},
+							{
+								"index": "416",
+								"data": "",
+								"desc": "氧气传感器4部分- 传感器1",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 4-Sensor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_0D_Exhaust_Gas_Sensor_Monitor_Bank_4_Sensor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x0D"
+							},
+							{
+								"index": "417",
+								"data": "",
+								"desc": "氧气传感器4部分- 传感器2",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 4-Sensor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_0E_Exhaust_Gas_Sensor_Monitor_Bank_4_Sensor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x0E"
+							},
+							{
+								"index": "418",
+								"data": "",
+								"desc": "氧气传感器4部分- 传感器3",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 4-Sensor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_0F_Exhaust_Gas_Sensor_Monitor_Bank_4_Sensor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x0F"
+							},
+							{
+								"index": "419",
+								"data": "",
+								"desc": "氧气传感器4部分- 传感器4",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 4-Sensor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_10_Exhaust_Gas_Sensor_Monitor_Bank_4_Sensor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x10"
+							},
+							{
+								"index": "420",
+								"data": "",
+								"desc": "氧气传感器1部分- 传感器5",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 1-Sensor 5 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_11_Exhaust_Gas_Sensor_Monitor_Bank_1_Sensor_5_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x11"
+							},
+							{
+								"index": "421",
+								"data": "",
+								"desc": "氧气传感器2部分- 传感器5",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 2-Sensor 5 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_12_Exhaust_Gas_Sensor_Monitor_Bank_2_Sensor_5_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x12"
+							},
+							{
+								"index": "422",
+								"data": "",
+								"desc": "氧气传感器1部分- 传感器6",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 1-Sensor 6 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_13_Exhaust_Gas_Sensor_Monitor_Bank_1_Sensor_6_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x13"
+							},
+							{
+								"index": "423",
+								"data": "",
+								"desc": "氧气传感器2部分- 传感器6",
+								"engdesc": "Exhaust Gas Sensor Monitor Bank 2-Sensor 6 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_14_Exhaust_Gas_Sensor_Monitor_Bank_2_Sensor_6_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x14"
+							},
+							{
+								"index": "424",
+								"data": "",
+								"desc": "MID支持情况(21-40)",
+								"engdesc": "OBD MIDs $21-$40 supported Request OnBoard Monitoring Test Results-Read Supported",
+								"qualifier": "_OBDMID_20_OBD_MIDs_21_40_supported_Request_OnBoard_Monitoring_Test_Results_Read_Supported",
+								"isIdInvalid": false,
+								"number": "0x20"
+							},
+							{
+								"index": "425",
+								"data": "",
+								"desc": "催化剂检测器1",
+								"engdesc": "Catalyst Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_21_Catalyst_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x21"
+							},
+							{
+								"index": "426",
+								"data": "",
+								"desc": "催化剂检测器2",
+								"engdesc": "Catalyst Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_22_Catalyst_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x22"
+							},
+							{
+								"index": "427",
+								"data": "",
+								"desc": "催化剂检测器3",
+								"engdesc": "Catalyst Monitor Bank 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_23_Catalyst_Monitor_Bank_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x23"
+							},
+							{
+								"index": "428",
+								"data": "",
+								"desc": "催化剂检测器4",
+								"engdesc": "Catalyst Monitor Bank 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_24_Catalyst_Monitor_Bank_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x24"
+							},
+							{
+								"index": "429",
+								"data": "",
+								"desc": "EGR监控器1",
+								"engdesc": "EGR Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_31_EGR_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x31"
+							},
+							{
+								"index": "430",
+								"data": "",
+								"desc": "EGR监控器2",
+								"engdesc": "EGR Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_32_EGR_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x32"
+							},
+							{
+								"index": "431",
+								"data": "",
+								"desc": "EGR监控器3",
+								"engdesc": "EGR Monitor Bank 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_33_EGR_Monitor_Bank_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x33"
+							},
+							{
+								"index": "432",
+								"data": "",
+								"desc": "EGR监控器4",
+								"engdesc": "EGR Monitor Bank 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_34_EGR_Monitor_Bank_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x34"
+							},
+							{
+								"index": "433",
+								"data": "",
+								"desc": "VVT（可变气门正时）监控器1",
+								"engdesc": "VVT Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_35_VVT_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x35"
+							},
+							{
+								"index": "434",
+								"data": "",
+								"desc": "VVT（可变气门正时）监控器2",
+								"engdesc": "VVT Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_36_VVT_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x36"
+							},
+							{
+								"index": "435",
+								"data": "",
+								"desc": "VVT（可变气门正时）监控器3",
+								"engdesc": "VVT Monitor Bank 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_37_VVT_Monitor_Bank_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x37"
+							},
+							{
+								"index": "436",
+								"data": "",
+								"desc": "VVT（可变气门正时）监控器4",
+								"engdesc": "VVT Monitor Bank 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_38_VVT_Monitor_Bank_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x38"
+							},
+							{
+								"index": "437",
+								"data": "",
+								"desc": "EVAP（燃油蒸发控制系统）（0.150）",
+								"engdesc": "EVAP Monitor (Cap Off/0.150) Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_39_EVAP_Monitor_Cap_Off_0_150_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x39"
+							},
+							{
+								"index": "438",
+								"data": "",
+								"desc": "EVAP（燃油蒸发控制系统）（0.090）",
+								"engdesc": "EVAP Monitor (Cap Off/0.090) Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_3A_EVAP_Monitor_0_090_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x3A"
+							},
+							{
+								"index": "439",
+								"data": "",
+								"desc": "EVAP（燃油蒸发控制系统）（0.040）",
+								"engdesc": "EVAP Monitor (Cap Off/0.040) Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_3B_EVAP_Monitor_0_040_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x3B"
+							},
+							{
+								"index": "440",
+								"data": "",
+								"desc": "EVAP（燃油蒸发控制系统）（0.020）",
+								"engdesc": "EVAP Monitor (Cap Off/0.020) Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_3C_EVAP_Monitor_0_020_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x3C"
+							},
+							{
+								"index": "441",
+								"data": "",
+								"desc": "清除流监控器",
+								"engdesc": "Purge Flow Monitor Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_3D_Purge_Flow_Monitor_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x3D"
+							},
+							{
+								"index": "442",
+								"data": "",
+								"desc": "MID支持情况(41-60)",
+								"engdesc": "OBD MIDs $41-$60 supported Request OnBoard Monitoring Test Results-Read Supported",
+								"qualifier": "_OBDMID_40_OBD_MIDs_41_60_supported_Request_OnBoard_Monitoring_Test_Results_Read_Supported",
+								"isIdInvalid": false,
+								"number": "0x40"
+							},
+							{
+								"index": "443",
+								"data": "",
+								"desc": "废气传感器加热器监控器1-传感器1请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 1-Sensor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_41_Exhaust_Gas_Sensor_Heater_Monitor_Bank_1_Sensor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x41"
+							},
+							{
+								"index": "444",
+								"data": "",
+								"desc": "废气传感器加热器监控器1-传感器2请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 1-Sensor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_42_Exhaust_Gas_Sensor_Heater_Monitor_Bank_1_Sensor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x42"
+							},
+							{
+								"index": "445",
+								"data": "",
+								"desc": "废气传感器加热器监控器1-传感器3请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 1-Sensor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_43_Exhaust_Gas_Sensor_Heater_Monitor_Bank_1_Sensor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x43"
+							},
+							{
+								"index": "446",
+								"data": "",
+								"desc": "废气传感器加热器监控器1-传感器4请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 1-Sensor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_44_Exhaust_Gas_Sensor_Heater_Monitor_Bank_1_Sensor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x44"
+							},
+							{
+								"index": "447",
+								"data": "",
+								"desc": "废气传感器加热器监控器2-传感器1请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 2-Sensor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_45_Exhaust_Gas_Sensor_Heater_Monitor_Bank_2_Sensor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x45"
+							},
+							{
+								"index": "448",
+								"data": "",
+								"desc": "废气传感器加热器监控器2-传感器2请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 2-Sensor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_46_Exhaust_Gas_Sensor_Heater_Monitor_Bank_2_Sensor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x46"
+							},
+							{
+								"index": "449",
+								"data": "",
+								"desc": "废气传感器加热器监控器2-传感器3请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 2-Sensor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_47_Exhaust_Gas_Sensor_Heater_Monitor_Bank_2_Sensor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x47"
+							},
+							{
+								"index": "450",
+								"data": "",
+								"desc": "废气传感器加热器监控器2-传感器4请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 2-Sensor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_48_Exhaust_Gas_Sensor_Heater_Monitor_Bank_2_Sensor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x48"
+							},
+							{
+								"index": "451",
+								"data": "",
+								"desc": "废气传感器加热器监控器3-传感器1请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 3-Sensor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_49_Exhaust_Gas_Sensor_Heater_Monitor_Bank_3_Sensor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x49"
+							},
+							{
+								"index": "452",
+								"data": "",
+								"desc": "废气传感器加热器监控器3-传感器2请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 3-Sensor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_4A_Exhaust_Gas_Sensor_Heater_Monitor_Bank_3_Sensor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x4A"
+							},
+							{
+								"index": "453",
+								"data": "",
+								"desc": "废气传感器加热器监控器3-传感器3请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 3-Sensor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_4B_Exhaust_Gas_Sensor_Heater_Monitor_Bank_3_Sensor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x4B"
+							},
+							{
+								"index": "454",
+								"data": "",
+								"desc": "废气传感器加热器监控器3-传感器4请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 3-Sensor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_4C_Exhaust_Gas_Sensor_Heater_Monitor_Bank_3_Sensor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x4C"
+							},
+							{
+								"index": "455",
+								"data": "",
+								"desc": "废气传感器加热器监控器4-传感器1请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 4-Sensor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_4D_Exhaust_Gas_Sensor_Heater_Monitor_Bank_4_Sensor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x4D"
+							},
+							{
+								"index": "456",
+								"data": "",
+								"desc": "废气传感器加热器监控器4-传感器2请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 4-Sensor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_4E_Exhaust_Gas_Sensor_Heater_Monitor_Bank_4_Sensor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x4E"
+							},
+							{
+								"index": "457",
+								"data": "",
+								"desc": "废气传感器加热器监控器4-传感器3请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 4-Sensor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_4F_Exhaust_Gas_Sensor_Heater_Monitor_Bank_4_Sensor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x4F"
+							},
+							{
+								"index": "458",
+								"data": "",
+								"desc": "废气传感器加热器监控器4-传感器4请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 4-Sensor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_50_Exhaust_Gas_Sensor_Heater_Monitor_Bank_4_Sensor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x50"
+							},
+							{
+								"index": "459",
+								"data": "",
+								"desc": "废气传感器加热器监控器1-传感器5请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 1-Sensor 5 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_51_Exhaust_Gas_Sensor_Heater_Monitor_Bank_1_Sensor_5_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x51"
+							},
+							{
+								"index": "460",
+								"data": "",
+								"desc": "废气传感器加热器监控器2-传感器5请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 2-Sensor 5 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_52_Exhaust_Gas_Sensor_Heater_Monitor_Bank_2_Sensor_5_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x52"
+							},
+							{
+								"index": "461",
+								"data": "",
+								"desc": "废气传感器加热器监控器1-传感器6请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 1-Sensor 6 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_53_Exhaust_Gas_Sensor_Heater_Monitor_Bank_1_Sensor_6_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x53"
+							},
+							{
+								"index": "462",
+								"data": "",
+								"desc": "废气传感器加热器监控器2-传感器6请求车载监控测试结果",
+								"engdesc": "Exhaust Gas Sensor Heater Monitor Bank 2-Sensor 6 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_54_Exhaust_Gas_Sensor_Heater_Monitor_Bank_2_Sensor_6_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x54"
+							},
+							{
+								"index": "463",
+								"data": "",
+								"desc": "MID支持情况(61-80)",
+								"engdesc": "OBD MIDs $61-$80 supported Request OnBoard Monitoring Test Results-Read Supported",
+								"qualifier": "_OBDMID_60_OBD_MIDs_61_80_supported_Request_OnBoard_Monitoring_Test_Results_Read_Supported",
+								"isIdInvalid": false,
+								"number": "0x60"
+							},
+							{
+								"index": "464",
+								"data": "",
+								"desc": "加热的催化剂监控器1请求车载监测结果",
+								"engdesc": "Heated Catalyst Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_61_Heated_Catalyst_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x61"
+							},
+							{
+								"index": "465",
+								"data": "",
+								"desc": "加热的催化剂监控器2请求车载监测结果",
+								"engdesc": "Heated Catalyst Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_62_Heated_Catalyst_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x62"
+							},
+							{
+								"index": "466",
+								"data": "",
+								"desc": "加热的催化剂监控器3请求车载监测结果",
+								"engdesc": "Heated Catalyst Monitor Bank 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_63_Heated_Catalyst_Monitor_Bank_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x63"
+							},
+							{
+								"index": "467",
+								"data": "",
+								"desc": "加热的催化剂监测仪监控器4请求车载监测结果",
+								"engdesc": "Heated Catalyst Monitor Bank 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_64_Heated_Catalyst_Monitor_Bank_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x64"
+							},
+							{
+								"index": "468",
+								"data": "",
+								"desc": "辅助空气监测器1请求机载监测测试结果",
+								"engdesc": "Secondary Air Monitor 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_71_Secondary_Air_Monitor_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x71"
+							},
+							{
+								"index": "469",
+								"data": "",
+								"desc": "辅助空气监测器2请求机载监测测试结果",
+								"engdesc": "Secondary Air Monitor 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_71_Secondary_Air_Monitor_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x72"
+							},
+							{
+								"index": "470",
+								"data": "",
+								"desc": "辅助空气监测器3请求机载监测测试结果",
+								"engdesc": "Secondary Air Monitor 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_71_Secondary_Air_Monitor_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x73"
+							},
+							{
+								"index": "471",
+								"data": "",
+								"desc": "辅助空气监测器4请求机载监测测试结果",
+								"engdesc": "Secondary Air Monitor 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_71_Secondary_Air_Monitor_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x74"
+							},
+							{
+								"index": "472",
+								"data": "",
+								"desc": "MID支持情况(81-A0)",
+								"engdesc": "OBD MIDs $81-$A0 supported Request OnBoard Monitoring Test Results-Read Supported",
+								"qualifier": "_OBDMID_80_OBD_MIDs_81_A0_supported_Request_OnBoard_Monitoring_Test_Results_Read_Supported",
+								"isIdInvalid": false,
+								"number": "0x80"
+							},
+							{
+								"index": "473",
+								"data": "",
+								"desc": "燃油系统监控器1请求车载监控测试结果",
+								"engdesc": "Fuel System Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_81_Fuel_System_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x81"
+							},
+							{
+								"index": "474",
+								"data": "",
+								"desc": "燃油系统监控器2请求车载监控测试结果",
+								"engdesc": "Fuel System Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_82_Fuel_System_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x82"
+							},
+							{
+								"index": "475",
+								"data": "",
+								"desc": "燃油系统监控器3请求车载监控测试结果",
+								"engdesc": "Fuel System Monitor Bank 3 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_83_Fuel_System_Monitor_Bank_3_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x83"
+							},
+							{
+								"index": "476",
+								"data": "",
+								"desc": "燃油系统监控器4请求车载监控测试结果",
+								"engdesc": "Fuel System Monitor Bank 4 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_84_Fuel_System_Monitor_Bank_4_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x84"
+							},
+							{
+								"index": "477",
+								"data": "",
+								"desc": "增压压力监控器1请求车载监控测试结果",
+								"engdesc": "Boost Pressure Control Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_85_Boost_Pressure_Control_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x85"
+							},
+							{
+								"index": "478",
+								"data": "",
+								"desc": "增压压力监控器2请求车载监控测试结果",
+								"engdesc": "Boost Pressure Control Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_85_Boost_Pressure_Control_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x86"
+							},
+							{
+								"index": "479",
+								"data": "",
+								"desc": "Nox Adsorber 监控器1请求机载监控测试结果",
+								"engdesc": "Nox Adsorber Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_90_NOx_Adsorber_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x90"
+							},
+							{
+								"index": "480",
+								"data": "",
+								"desc": "Nox Adsorber 监控器2请求机载监控测试结果",
+								"engdesc": "Nox Adsorber Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_91_NOx_Adsorber_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x91"
+							},
+							{
+								"index": "481",
+								"data": "",
+								"desc": "Nox/SCR 催化剂监控器1请求机载监控测试结果",
+								"engdesc": "Nox/SCR Catalyst Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_98_NOx_SCR_Catalyst_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x98"
+							},
+							{
+								"index": "482",
+								"data": "",
+								"desc": "Nox/SCR 催化剂监控器2请求机载监控测试结果",
+								"engdesc": "Nox/SCR Catalyst Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_99_NOx_SCR_Catalyst_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0x99"
+							},
+							{
+								"index": "483",
+								"data": "",
+								"desc": "MID支持情况(A1-C0)",
+								"engdesc": "OBD MIDs $A1-$C0 supported Request OnBoard Monitoring Test Results-Read Supported",
+								"qualifier": "_OBDMID_A0_OBD_MIDs_A1_C0_supported_Request_OnBoard_Monitoring_Test_Results_Read_Supported",
+								"isIdInvalid": false,
+								"number": "0xA0"
+							},
+							{
+								"index": "484",
+								"data": "",
+								"desc": "失火监视器常规数据请求车载监控测试结果",
+								"engdesc": "Misfire Monitor General Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A1_Misfire_Monitor_General_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA1"
+							},
+							{
+								"index": "485",
+								"data": "",
+								"desc": "失火气缸1数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 1 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A2_Misfire_Cylinder_1_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA2"
+							},
+							{
+								"index": "486",
+								"data": "",
+								"desc": "失火气缸2数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 2 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A3_Misfire_Cylinder_2_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA3"
+							},
+							{
+								"index": "487",
+								"data": "",
+								"desc": "失火气缸3数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 3 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A4_Misfire_Cylinder_3_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA4"
+							},
+							{
+								"index": "488",
+								"data": "",
+								"desc": "失火气缸4数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 4 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A5_Misfire_Cylinder_4_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA5"
+							},
+							{
+								"index": "489",
+								"data": "",
+								"desc": "失火气缸5数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 5 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A6_Misfire_Cylinder_5_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA6"
+							},
+							{
+								"index": "490",
+								"data": "",
+								"desc": "失火气缸6数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 6 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A7_Misfire_Cylinder_6_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA7"
+							},
+							{
+								"index": "491",
+								"data": "",
+								"desc": "失火气缸7数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 7 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A8_Misfire_Cylinder_7_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA8"
+							},
+							{
+								"index": "492",
+								"data": "",
+								"desc": "失火气缸8数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 8 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_A9_Misfire_Cylinder_8_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xA9"
+							},
+							{
+								"index": "493",
+								"data": "",
+								"desc": "失火气缸9数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 9 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_AA_Misfire_Cylinder_9_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xAA"
+							},
+							{
+								"index": "494",
+								"data": "",
+								"desc": "失火气缸10数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 10 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_AB_Misfire_Cylinder_10_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xAB"
+							},
+							{
+								"index": "495",
+								"data": "",
+								"desc": "失火气缸11数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 11 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_AC_Misfire_Cylinder_11_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xAC"
+							},
+							{
+								"index": "496",
+								"data": "",
+								"desc": "失火气缸12数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 12 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_AD_Misfire_Cylinder_12_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xAD"
+							},
+							{
+								"index": "497",
+								"data": "",
+								"desc": "失火气缸13数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 13 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_AE_Misfire_Cylinder_13_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xAE"
+							},
+							{
+								"index": "498",
+								"data": "",
+								"desc": "失火气缸14数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 14 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_AF_Misfire_Cylinder_14_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xAF"
+							},
+							{
+								"index": "499",
+								"data": "",
+								"desc": "失火气缸15数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 15 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_B0_Misfire_Cylinder_15_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xB0"
+							},
+							{
+								"index": "500",
+								"data": "",
+								"desc": "失火气缸16数据请求车载监控测试结果",
+								"engdesc": "Misfire Cylinder 16 Data Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_B1_Misfire_Cylinder_16_Data_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xB1"
+							},
+							{
+								"index": "501",
+								"data": "",
+								"desc": "PM过滤监控器1请求板载监控测试结果",
+								"engdesc": "PM Filter Monitor Bank 1 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_B2_PM_Filter_Monitor_Bank_1_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xB2"
+							},
+							{
+								"index": "502",
+								"data": "",
+								"desc": "PM过滤监控器2请求板载监控测试结果",
+								"engdesc": "PM Filter Monitor Bank 2 Request OnBoard Monitoring Test Results",
+								"qualifier": "_OBDMID_B3_PM_Filter_Monitor_Bank_2_Request_OnBoard_Monitoring_Test_Results",
+								"isIdInvalid": false,
+								"number": "0xB3"
+							},
+							{
+								"index": "503",
+								"data": "",
+								"desc": "MID支持情况(C1-E0)",
+								"engdesc": "OBD MIDs $C1-$E0 supported Request OnBoard Monitoring Test Results - Read Supported",
+								"qualifier": "_OBDMID_C0_OBD_MIDs_C1_E0_supported_Request_OnBoard_Monitoring_Test_Results_Read_Supported",
+								"isIdInvalid": false,
+								"number": "0xC0"
+							},
+							{
+								"index": "504",
+								"data": "",
+								"desc": "MID支持情况(E1-FF)",
+								"engdesc": "OBD MIDs $E1-$FF supported Request OnBoard Monitoring Test Results - Read Supported",
+								"qualifier": "_OBDMID_E0_OBD_MIDs_E1_FF_supported_Request_OnBoard_Monitoring_Test_Results_Read_Supported",
+								"isIdInvalid": false,
+								"number": "0xE0"
+							}
+						]
+					}
+				]
+			},
+			{
+				"enable": true,
+				"id": "0x05",
+				"name": "控制车载系统，测试或组件",
+				"engName": "Control of OnBoard System,Test or Component",
+				"services": [
+					{
+						"sid": "0x08",
+						"servicename": "车载系统、试验或构件的请求控制",
+						"serviceengname": "Request Control of On-Board System, Test or Component",
+						"subitems": [
+							{
+								"index": "505",
+								"data": "",
+								"desc": "车载实验支持情况(00-20)",
+								"engdesc": "TID supported,$01-$20 Read supported TIDs",
+								"qualifier": "_TID_00_TID_supported_01_20_READ_SUPP_TIDS",
+								"isIdInvalid": false,
+								"number": "0x00"
+							},
+							{
+								"index": "506",
+								"data": "",
+								"desc": "01—蒸发系统渗漏试验",
+								"engdesc": "Evaporative system leak test Read TID data",
+								"qualifier": "_TID_01_Evaporative_system_leak_test_CONTROL_TID",
+								"isIdInvalid": false,
+								"number": "0x01"
+							},
+							{
+								"index": "507",
+								"data": "",
+								"desc": "02—蒸发系统渗漏试验",
+								"engdesc": "Particulate Filter Recirculation Control TID",
+								"qualifier": "_TID_02_Diesel_Particulate_Filter_Regeneration_CONTROL_TID",
+								"isIdInvalid": false,
+								"number": "0x02"
+							},
+							{
+								"index": "508",
+								"data": "",
+								"desc": "车载实验支持情况(21-40)",
+								"engdesc": "TID supported,$21-$40 Read supported TIDs",
+								"qualifier": "_TID_20_TID_supported_21_40_READ_SUPP_TIDS",
+								"isIdInvalid": false,
+								"number": "0x20"
+							},
+							{
+								"index": "509",
+								"data": "",
+								"desc": "车载实验支持情况(41-60)",
+								"engdesc": "TID supported,$41-$60 Read supported TIDs",
+								"qualifier": "_TID_40_TID_supported_41_60_READ_SUPP_TIDS",
+								"isIdInvalid": false,
+								"number": "0x40"
+							},
+							{
+								"index": "510",
+								"data": "",
+								"desc": "车载实验支持情况(61-80)",
+								"engdesc": "TID supported,$61-$80 Read supported TIDs",
+								"qualifier": "_TID_60_TID_supported_61_80_READ_SUPP_TIDS",
+								"isIdInvalid": false,
+								"number": "0x60"
+							},
+							{
+								"index": "511",
+								"data": "",
+								"desc": "车载实验支持情况(81-A0)",
+								"engdesc": "TID supported,$81-$A0 Read supported TIDs",
+								"qualifier": "_TID_80_TID_supported_81_A0_READ_SUPP_TIDS",
+								"isIdInvalid": false,
+								"number": "0x80"
+							},
+							{
+								"index": "512",
+								"data": "",
+								"desc": "车载实验支持情况(A1-C0)",
+								"engdesc": "TID supported,$A1-$C0 Read supported TIDs",
+								"qualifier": "_TID_A0_TID_supported_A1_C0_READ_SUPP_TIDS",
+								"isIdInvalid": false,
+								"number": "0xA0"
+							},
+							{
+								"index": "513",
+								"data": "",
+								"desc": "车载实验支持情况(C1-E0)",
+								"engdesc": "TID supported,$C1-$E0 Read supported TIDs",
+								"qualifier": "_TID_C0_TID_supported_C1_E0_READ_SUPP_TIDS",
+								"isIdInvalid": false,
+								"number": "0xC0"
+							},
+							{
+								"index": "514",
+								"data": "",
+								"desc": "车载实验支持情况(E1-FF)",
+								"engdesc": "TID supported,$E1-$FF Read supported TIDs",
+								"qualifier": "_TID_E0_TID_supported_E1_FF_READ_SUPP_TIDS",
+								"isIdInvalid": false,
+								"number": "0xE0"
+							}
+						]
+					}
+				]
+			},
+			{
+				"enable": true,
+				"id": "0x06",
+				"name": "车辆资讯",
+				"engName": "Vehicle Information",
+				"services": [
+					{
+						"sid": "0x09",
+						"servicename": "请求车辆消息",
+						"serviceengname": "Request Vehicle Information",
+						"subitems": [
+							{
+								"index": "515",
+								"data": "",
+								"desc": "服务09支持的PID列表",
+								"engdesc": "InfoType supported,$01-$20 Read supported InfoTypes",
+								"qualifier": "_InfoType_00_InfoType_supported_01_20_REQUEST_VEHICLE_INFO",
+								"isIdInvalid": false,
+								"number": "0x00"
+							},
+							{
+								"index": "516",
+								"data": "",
+								"desc": "VIN消息计数",
+								"engdesc": "MessageCount VIN Read InfoType Data",
+								"qualifier": "_InfoType_01_MessageCount_VIN_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x01"
+							},
+							{
+								"index": "517",
+								"data": "",
+								"desc": "车辆唯一标识VIN",
+								"engdesc": "Vehicle Identification Number Read InfoType Data",
+								"qualifier": "_InfoType_02_Vehicle_Identification_Number_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x02"
+							},
+							{
+								"index": "518",
+								"data": "",
+								"desc": "消息计数校准ID",
+								"engdesc": "MessageCount CALID Read InfoType Data",
+								"qualifier": "_InfoType_03_MessageCount_CALID_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x03"
+							},
+							{
+								"index": "519",
+								"data": "",
+								"desc": "校准ID",
+								"engdesc": "Calibration Identification Read InfoType Data",
+								"qualifier": "_InfoType_04_Calibration_Identification_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x04"
+							},
+							{
+								"index": "520",
+								"data": "",
+								"desc": "校准验证码消息计数",
+								"engdesc": "MessageCount CVN Read InfoType Data",
+								"qualifier": "_InfoType_05_MessageCount_CVN_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x05"
+							},
+							{
+								"index": "521",
+								"data": "",
+								"desc": "校准验证码",
+								"engdesc": "Calibration Verification Numbers Read InfoType Data",
+								"qualifier": "_InfoType_06_Calibration_Verification_Numbers_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x06"
+							},
+							{
+								"index": "522",
+								"data": "",
+								"desc": "在用的性能跟踪计数信息",
+								"engdesc": "In-use Performance Tracking message count for PID 08 and 0B",
+								"qualifier": "_InfoType_07_MessageCount_IPT_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x07"
+							},
+							{
+								"index": "523",
+								"data": "",
+								"desc": "点火式车辆的使用中性能跟踪",
+								"engdesc": "In-use Performance Tracking for spark ignition vehicle",
+								"qualifier": "_InfoType_08_In_use_Performance_Tracking",
+								"isIdInvalid": false,
+								"number": "0x08"
+							},
+							{
+								"index": "524",
+								"data": "",
+								"desc": "ECU名字信息计数",
+								"engdesc": "MessageCount ECU Name Read InfoType Data",
+								"qualifier": "_InfoType_09_MessageCount_ECUNAME_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x09"
+							},
+							{
+								"index": "525",
+								"data": "",
+								"desc": "ECU名字",
+								"engdesc": "ECU/Module Acronym and Text Name Read InfoType Data",
+								"qualifier": "_InfoType_0A_ECU_Module_Acronym_and_Text_Name_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x0A"
+							},
+							{
+								"index": "526",
+								"data": "",
+								"desc": "压燃式车辆的使用中性能跟踪",
+								"engdesc": "In-use Performance Tracking for compression ignition vehicle",
+								"qualifier": "_InfoType_0B_In_use_Performance_Tracking",
+								"isIdInvalid": false,
+								"number": "0x0B"
+							},
+							{
+								"index": "527",
+								"data": "",
+								"desc": "引擎序列号信息计数",
+								"engdesc": "MessageCount ESN Read InfoType Data",
+								"qualifier": "_InfoType_0C_MessageCount_ESN_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x0C"
+							},
+							{
+								"index": "528",
+								"data": "",
+								"desc": "引擎序列号",
+								"engdesc": "Engine Serial Number Read InfoType Data",
+								"qualifier": "_InfoType_0D_Engine_Serial_Number_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x0D"
+							},
+							{
+								"index": "529",
+								"data": "",
+								"desc": "EROTAN信息计数",
+								"engdesc": "MessageCount EROTAN Read InfoType Data",
+								"qualifier": "_InfoType_0E_MessageCount_EROTAN_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x0E"
+							},
+							{
+								"index": "530",
+								"data": "",
+								"desc": "EROTAN",
+								"engdesc": "EROTAN",
+								"qualifier": "InfoTyp_0F_Exhaust_Regulation_Or_Type_Approval_Number_Read_InfoType_Data",
+								"isIdInvalid": false,
+								"number": "0x0F"
+							}
+						]
+					}
+				]
+			},
+			{
+				"enable": true,
+				"id": "0x07",
+				"name": "排放相关故障代码",
+				"engName": "Emission-Related Trouble Codes",
+				"services": [
+					{
+						"index": "566",
+						"sid": "0x03",
+						"servicename": "请求与排放相关的诊断故障代码",
+						"serviceengname": "Request Emission-Related Diagnostic Trouble Codes",
+						"subitems": []
+					},
+					{
+						"index": "565",
+						"sid": "0x04",
+						"servicename": "清除/重置与排放相关的诊断信息",
+						"serviceengname": "Clear/Reset Emission-Related Diagnostic Information",
+						"subitems": []
+					},
+					{
+						"index": "563",
+						"sid": "0x07",
+						"servicename": "请求当前或上次完成驱动循环期间的已检测的诊断故障代码",
+						"serviceengname": "Request Emission-Related Diagnostic Trouble Codes Detected During Current or Last Completed Driving Cycle",
+						"subitems": []
+					},
+					{
+						"index": "564",
+						"sid": "0x0A",
+						"servicename": "请求与排放相关的诊断故障代码（具备永久状态）",
+						"serviceengname": "Request Emission-Related Diagnostic Trouble Codes with Permanent Status",
+						"subitems": []
+					}
+				]
+			},
+			{
+				"enable": true,
+				"id": "0x08",
+				"name": "用户定义原始电报",
+				"engName": "User defined messages",
+				"services": []
+			}
+		]
+}

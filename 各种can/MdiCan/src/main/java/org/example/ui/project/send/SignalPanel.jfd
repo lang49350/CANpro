@@ -1,0 +1,104 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "17.0.8.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+			"axis": 0
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 1
+			} ) {
+				name: "signalsGroup"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "signalPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "signalName"
+						"text": "信号名称:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "startBit"
+						"text": "起始位:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "signalLength"
+						"text": "长度:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "byteOrder"
+						"text": "字节序列:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "isSigned"
+						"text": "是否有符号:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "scale"
+						"text": "缩放:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "offset"
+						"text": "偏移:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "maxVal"
+						"text": "最大值:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "minVal"
+						"text": "最小值:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "unit"
+						"text": "单位:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": "当前值"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "currentVal"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label12"
+						"text": "设定值:"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "setVal"
+						"columns": 8
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "signalPanel2"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "signalComment"
+						"text": "信号解释:"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "commentTextField"
+						"columns": 20
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label13"
+						"text": "用户备注:"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "userCommentTextField"
+						"columns": 20
+						"editable": false
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+						name: "hSpacer1"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 795, 300 )
+		} )
+	}
+}

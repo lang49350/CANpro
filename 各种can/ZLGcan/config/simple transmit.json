@@ -1,0 +1,51 @@
+{
+    "tab0": {
+        "bit mask": "ffffffff",
+        "bit operator": 0,
+        "bit_operator_enable": false,
+        "channel name": "",
+        "data len selected": 8,
+        "datas": "01 91 AA BB C4 5D 66 B7",
+        "frame format value": 1,
+        "frame id": "100",
+        "frame repeat": "1",
+        "frame type value": 1,
+        "increase data": false,
+        "increase data length": 8,
+        "increase data start byte": 0,
+        "increase id": false,
+        "interval": "0",
+        "list": {
+            "00000000": {
+                "data len selected": 8,
+                "datas": "00 11 22 33 44 55 66 77",
+                "e2e data id": "0",
+                "e2e enable": false,
+                "frame format value": 0,
+                "frame id": "100",
+                "frame repeat": "1",
+                "frame type value": 0,
+                "increase data": false,
+                "increase data length": "8",
+                "increase data start byte": "0",
+                "increase id": false,
+                "interval": "0",
+                "name": "",
+                "select": true,
+                "transmit as": 0,
+                "transmit mode value": 0,
+                "transmit time": "1"
+            }
+        },
+        "list advance": false,
+        "list send mode": 0,
+        "list transmit interval": 0,
+        "list transmit time": "1",
+        "name": "",
+        "transFailMode": 0,
+        "transmit as": 0,
+        "transmit mode value": 0,
+        "transmit rate selected": 6,
+        "transmit time": "1"
+    }
+}

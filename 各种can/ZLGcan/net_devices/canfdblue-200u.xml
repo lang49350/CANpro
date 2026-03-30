@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="gb2312"?>
+<devinfo>
+		<dir name="@:general">
+			<item id="1" name="@:devtype" readonly="1" cmd="DEV_TYPE_NAME"/>
+			<item id="2" name="@:mac" readonly="1" cmd="MAC" checktype="6" datarule="[0-9a-fA-F]?(0|2|4|6|8|a|c|e|A|C|E):(([0-9a-fA-F]{1,2}):){4}[0-9a-fA-F]{1,2}" except0="([fF]{1,2}:){5}[fF]{1,2}" except1="(0{1,2}:){5}0{1,2}" comment="@:cmt_mac"/>
+			<item id="3" name="@:firmware_version" readonly="1" cmd="FIRMWARE_VER" />
+			<item id="4" name="@:hardware_version" readonly="1" cmd="HARDWARE_VER" />
+			<item id="5" name="@:series_num" readonly="1" cmd="SERIES_NUM" />
+			<item id="6" name="@:devname" cmd="NAME" checktype="2" datarule="[\x0020-\x0021\x0023-\x005b\x005d-\x007e]{1,26}" comment="@:cmt_devname"/>
+		</dir>
+		<dir name="@:password_op">
+			<!-- <item id="7" name="@:current_password" ispassword="1" cmd="INPUT_PASSWORD" notapply="1" notexport="1"/> -->
+			<item id="8" name="@:change_password" cmd="MOTIFY_PASSWORD_OR_NOT" defaultval="0" notapply="1">
+				<option name="@:no" value="0" disableitem="9|10" />
+				<option name="@:yes" value="1" enableitem="9|10" />
+			</item>
+			<item id="9" name="@:new_password" ispassword="1" cmd="PASS" checktype="5" min="1" max="9" notexport="1" comment="@:cmt_new_password"/>
+			<item id="10" name="@:sure_new_password" ispassword="1" cmd="SURE_PASS" checktype="50" cmpcmd="PASS" notexport="1" notapply="1"/>
+		</dir>
+		<dir name="@:can0_cfg">
+			<item id="11" name="@:can_enable" readonly="0" cmd="CAN1_ENABLE" defaultval="0">
+				<option name="@:close_can" value="0" disableitem="12|13|14|15|16|17|18|19|20|21|22|23|24"/>
+				<option name="@:open_can" value="1" enableitem="12|13|14|15|16|17|18|19|20|21|22|23|24"/>
+			</item>
+			<item id="12" name="@:controller_type" readonly="0" cmd="CAN1_CONTROLLER_TYPE" defaultval="0">
+				<option name="CANFD" value="0" enableitem="13|19"/>
+				<option name="CAN" value="1" disableitem="13|19"/>
+			</item>
+			<item id="13" name="@:canfd_std" readonly="0" visibleif="11|12" cmd="CAN1_CANFD_STANDARD" defaultval="0">
+				<option name="ISO" value="0"/>
+				<option name="Non ISO" value="1"/>
+			</item>
+			<item id="14" name="@:work_mode" readonly="0" cmd="CAN1_LISTEN_MD" defaultval="0">
+				<option name="@:normal_mode" value="0" />
+				<option name="@:listen_only_mode" value="1" />
+			</item>
+			<item id="15" name="@:clock" readonly="1" cmd="CAN1_CLOCK" comment="@:cmt_clock"/>
+			<item id="16" name="@:custom_baudrate_enable" readonly="0" cmd="CAN1_BAUD_CUSTOM_OR_NOT" defaultval="0" notapply="1">
+				<option name="@:no" value="0" disableitem="17" enableitem="18|19" />
+				<option name="@:yes" value="1" disableitem="18|19" enableitem="17" />
+			</item>
+			<item id="17" name="@:custom_baudrate" readonly="0" cmd="CAN1_BAUD_CUSTOM" visibleif="11|16" comment="@:cmt_custom_baudrate" />
+			<item id="18" name="@:nominal_baudrate" readonly="0" cmd="CAN1_NBAUD" visibleif="11|16" lessthan="CAN1_DBAUD" defaultval="0">
+				<option name="1Mbps 80%" value="1000000"/>
+				<option name="800kbps 80%" value="800000"/>
+				<option name="500kbps 80%" value="500000"/>
+				<option name="250kbps 80%" value="250000"/>
+				<option name="125kbps 80%" value="125000"/>
+				<option name="100kbps 80%" value="100000"/>
+				<option name="50kbps 80%" value="50000"/>
+			</item>
+			<item id="19" name="@:data_baudrate" readonly="0" cmd="CAN1_DBAUD" visibleif="11|12|16" morethan="CAN1_NBAUD" defaultval="0">
+				<option name="5Mbps 75%" value="5000000"/>
+				<option name="4Mbps 80%" value="4000000"/>
+				<option name="2Mbps 80%" value="2000000"/>
+				<option name="1Mbps 80%" value="1000000"/>
+				<option name="800kbps 80%" value="800000"/>
+				<option name="500kbps 80%" value="500000"/>
+				<option name="250kbps 80%" value="250000"/>
+				<option name="125kbps 80%" value="125000"/>
+				<option name="100kbps 80%" value="100000"/>
+			</item>
+			<item id="20" name="@:resistance" readonly="0" cmd="CAN1_USE_RESI" defaultval="0">
+				<option name="@:close" value="0" />
+				<option name="@:open" value="1" />
+			</item>
+			<item id="21" name="@:filter" dialog="filter" copyable="0" readonly="1" cmd="CAN1_FILTER" notapply="1"/>
+			<item id="22" name="@:min_interval" readonly="0" cmd="CAN1_SEND_PERIOD" checktype="1" min="0" max="255" comment="0~255ms" />
+			<item id="23" name="@:send_buf" readonly="0" cmd="CAN1_SEND_BUF_SIZE" checktype="1" min="10" max="1000" comment="@:cmt_send_buf" />
+			<item id="24" name="@:send_buf_strategy" readonly="0" cmd="CAN1_SEND_BUF_MODE">
+				<option name="@:discard_new" value="0" />
+				<option name="@:discard_old" value="1" />
+			</item>
+		</dir>
+		<dir name="@:can1_cfg">
+			<item id="25" name="@:can_enable" readonly="0" cmd="CAN2_ENABLE" defaultval="0">
+				<option name="@:close_can" value="0" disableitem="26|27|28|29|30|31|32|33|34|35|36|37|38"/>
+				<option name="@:open_can" value="1" enableitem="26|27|28|29|30|31|32|33|34|35|36|37|38"/>
+			</item>
+			<item id="26" name="@:controller_type" readonly="0" cmd="CAN2_CONTROLLER_TYPE" defaultval="0">
+				<option name="CANFD" value="0" enableitem="27|33"/>
+				<option name="CAN" value="1" disableitem="27|33"/>
+			</item>
+			<item id="27" name="@:canfd_std" readonly="0" visibleif="25|26" cmd="CAN2_CANFD_STANDARD" defaultval="0">
+				<option name="ISO" value="0"/>
+				<option name="Non ISO" value="1"/>
+			</item>
+			<item id="28" name="@:work_mode" readonly="0" cmd="CAN2_LISTEN_MD" defaultval="0">
+				<option name="@:normal_mode" value="0" />
+				<option name="@:listen_only_mode" value="1" />
+			</item>
+			<item id="29" name="@:clock" readonly="1" cmd="CAN2_CLOCK" comment="@:cmt_clock"/>
+			<item id="30" name="@:custom_baudrate_enable" readonly="0" cmd="CAN2_BAUD_CUSTOM_OR_NOT" defaultval="0" notapply="1">
+				<option name="@:no" value="0" disableitem="31" enableitem="32|33" />
+				<option name="@:yes" value="1" disableitem="32|33" enableitem="31" />
+			</item>
+			<item id="31" name="@:custom_baudrate" readonly="0" cmd="CAN2_BAUD_CUSTOM" visibleif="25|30" comment="@:cmt_custom_baudrate" />
+			<item id="32" name="@:nominal_baudrate" readonly="0" cmd="CAN2_NBAUD" visibleif="25|30" lessthan="CAN2_DBAUD" defaultval="0">
+				<option name="1Mbps 80%" value="1000000"/>
+				<option name="800kbps 80%" value="800000"/>
+				<option name="500kbps 80%" value="500000"/>
+				<option name="250kbps 80%" value="250000"/>
+				<option name="125kbps 80%" value="125000"/>
+				<option name="100kbps 80%" value="100000"/>
+				<option name="50kbps 80%" value="50000"/>
+			</item>
+			<item id="33" name="@:data_baudrate" readonly="0" cmd="CAN2_DBAUD" visibleif="25|26|30" morethan="CAN2_NBAUD" defaultval="0">
+				<option name="5Mbps 75%" value="5000000"/>
+				<option name="4Mbps 80%" value="4000000"/>
+				<option name="2Mbps 80%" value="2000000"/>
+				<option name="1Mbps 80%" value="1000000"/>
+				<option name="800kbps 80%" value="800000"/>
+				<option name="500kbps 80%" value="500000"/>
+				<option name="250kbps 80%" value="250000"/>
+				<option name="125kbps 80%" value="125000"/>
+				<option name="100kbps 80%" value="100000"/>
+			</item>
+			<item id="34" name="@:resistance" readonly="0" cmd="CAN2_USE_RESI" defaultval="0">
+				<option name="@:close" value="0" />
+				<option name="@:open" value="1" />
+			</item>
+			<item id="35" name="@:filter" dialog="filter" copyable="0" readonly="1" cmd="CAN2_FILTER" notapply="1"/>
+			<item id="36" name="@:min_interval" readonly="0" cmd="CAN2_SEND_PERIOD" checktype="1" min="0" max="255" comment="0~255ms" />
+			<item id="37" name="@:send_buf" readonly="0" cmd="CAN2_SEND_BUF_SIZE" checktype="1" min="10" max="1000" comment="@:cmt_send_buf" />
+			<item id="38" name="@:send_buf_strategy" readonly="0" cmd="CAN2_SEND_BUF_MODE">
+				<option name="@:discard_new" value="0" />
+				<option name="@:discard_old" value="1" />
+			</item>
+		</dir>
+		<dir name="@:blue">
+			<item id="39" name="@:scan_enable" readonly="0" cmd="BLUE_SCAN_ENABLE">
+				<option name="@:scan_close" value="0" disableitem="43"/>
+				<option name="@:scan_start" value="1" enableitem="43"/>
+			</item>
+			<item id="40" name="@:broadcast_enable" readonly="0" cmd="BLUE_BROADCAST_ENABLE">
+				<option name="@:broadcast_close" value="0" disableitem="42"/>
+				<option name="@:broadcast_start" value="1" enableitem="42"/>
+			</item>
+			<item id="41" name="@:blue_password" ispassword="1" notexport="1" cmd="BLUE_PASSWORD" checktype="2" datarule="[0-9]{6}" rule_cmt="@:blue_password_rule_cmt" comment="@:cmt_blue_password"/>
+			<item id="42" name="@:broadcast_interval" readonly="0" cmd="BLUE_BRT_INTERVAL" comment="@:cmt_broadcast_interval">
+				<option name="20" value="20" />
+				<option name="40" value="40" />
+				<option name="152" value="152" />
+				<option name="211" value="211" />
+				<option name="318" value="318" />
+				<option name="417" value="417" />
+				<option name="546" value="546" />
+				<option name="760" value="760" />
+				<option name="852" value="852" />
+				<option name="1022" value="1022" />
+				<option name="1285" value="1285" />
+				<option name="2000" value="2000" />
+				<option name="3000" value="3000" />
+				<option name="4000" value="4000" />
+				<option name="5000" value="5000" />
+				<option name="10000" value="10000" />
+			</item>
+			<item id="43" name="@:scan_interval" readonly="0" cmd="BLUE_SCAN_INTERVAL" checktype="1" min="10" max="10000" comment="@:cmt_scan_interval" />
+			<item id="44" name="@:tx_power" readonly="0" cmd="BLUE_TX_PWR" comment="-40~8dbm" >
+				<option name="8" value="8" />
+				<option name="7" value="7" />
+				<option name="5" value="5" />
+				<option name="4" value="4" />
+				<option name="3" value="3" />
+				<option name="2" value="2" />
+				<option name="0" value="0" />
+				<option name="-4" value="-4" />
+				<option name="-8" value="-8" />
+				<option name="-12" value="-12" />
+				<option name="-16" value="-16" />
+				<option name="-20" value="-20" />
+				<option name="-40" value="-40" />
+			</item>
+			<item id="45" name="@:scan_rssi" readonly="0" checktype="1" min="-99" max="99" cmd="BLUE_SCAN_DEVS_RSSI" comment="@:cmt_scan_rssi"/>
+			<item id="46" name="@:scan_key" readonly="0" cmd="BLUE_SCAN_DEVS_KEY" checktype="2" datarule="[\x0020-\x007e]{,8}" rule_cmt="@:scan_key_rule_cmt"  comment="@:cmt_scan_key"/>
+			<item id="47" name="@:device_scanned_table" dialog="device_scanned_table" copyable="0" readonly="1" cmd="DEVICE_SCANNED_TABLE" notapply="1"/>
+		</dir>
+		<dir name="@:convert">
+			<item id="60" name="@:convert_mode" readonly="0" cmd="CONVERT_MODE" comment="@:cmt_convert_mode">
+				<option name="@:convert_by_chn" value="0" />
+				<option name="@:convert_by_copy" value="1" />
+			</item>
+			<item id="61" name="@:convert_recv_buf_mode" readonly="0" cmd="CONVERT_RECV_BUF_MODE" comment="@:cmt_convert_recv_buf_mode">
+				<option name="@:not_clear_when_connect" value="0" />
+				<option name="@:clear_when_connect" value="1" />
+			</item>
+			<item id="62" name="@:convert_direction_ctrl1" readonly="0" cmd="CONVERT_DIRECT_CTRL0" comment="@:cmt_direction_ctrl">
+				<option name="@:mode_bothway" value="0" />
+				<option name="@:mode_rx" value="1" />
+				<option name="@:mode_tx" value="2" />
+			</item>
+			<item id="63" name="@:convert_direction_ctrl2" readonly="0" cmd="CONVERT_DIRECT_CTRL1" comment="@:cmt_direction_ctrl">
+				<option name="@:mode_bothway" value="0" />
+				<option name="@:mode_rx" value="1" />
+				<option name="@:mode_tx" value="2" />
+			</item>
+		</dir>
+		<string>
+			<item name="general" cn="基本信息" en="General" tw="基本信息"/>
+			<item name="devtype" cn="设备型号" en="Device Type" tw="設備類型"/>
+			<item name="firmware_version" cn="固件版本" en="Firmware Version" tw="固件版本"/>
+			<item name="hardware_version" cn="硬件版本" en="Hardware Version" tw="硬件版本"/>
+			<item name="series_num" cn="设备序列号" en="Series Number" tw="設備序列號"/>
+			<item name="devname" cn="设备名称" en="Device Name" tw="設備名稱"/>
+			<item name="cmt_devname" cn="设备名称长度为1~26个英文字符,不支持双引号(&quot;)和反斜线(\)" en="the string length range: 1~26, double quotes(&quot;) and backslash(\) are not supported" tw="設備名稱長度為1~26個英文字符,不支持雙引號(&quot;)和反斜線(\)"/>
+			<item name="password_op" cn="密码操作" en="Password Operator" tw="密碼操作"/>
+			<item name="current_password" cn="当前密码" en="Current Password" tw="當前密碼"/>
+			<item name="change_password" cn="是否更改密码" en="Change Password" tw="是否更改密碼"/>
+			<item name="yes" cn="是" en="Yes" tw="是"/>
+			<item name="no" cn="否" en="No" tw="否"/>
+			<item name="new_password" cn="新密码" en="New Password" tw="新密碼"/>
+			<item name="sure_new_password" cn="确认新密码" en="Password Again" tw="確認新密碼"/>
+			<item name="cmt_new_password" cn="设置的密码长度为1~9, 1个汉字算3个英文字符" en="the string length range: 1~9" tw="設置的密碼長度為1~9, 1個漢字算3個英文字符"/>
+			<item name="mac" cn="MAC地址" en="MAC" tw="MAC地址"/>
+			<item name="cmt_mac" cn="输入规则为 xx:xx:xx:xx:xx, xx为两个16进制字符, 如00:14:97:FF:12:45, 特殊地址00:00:00:00:00:00、FF:FF:FF:FF:FF:FF、组播地址(第一个字节最低位为1)除外" en="rules: xx:xx:xx:xx:xx, xx are two hexadecimal chars, ex:00:14:97:FF:12:45, except 00:00:00:00:00:00、FF:FF:FF:FF:FF:FF、multicast(the lowest bit of the first byte is 1)" tw="輸入規則為: xx:xx:xx:xx:xx, xx為兩個16進制字符, 如:00:14:97:FF:12:45, 特殊地址00:00:00:00:00:00、FF:FF:FF:FF:FF:FF、組播地址(第一個字節最低位為1)除外"/>
+			<item name="enable" cn="使能" en="Enable" tw="使能"/>
+			<item name="disable" cn="禁能" en="Disable" tw="禁能"/>
+			<item name="can0_cfg" cn="CAN0配置" en="CAN0 Configuration" tw="CAN0配置"/>
+			<item name="can1_cfg" cn="CAN1配置" en="CAN1 Configuration" tw="CAN1配置"/>
+			<item name="can_type" cn="控制器类型" en="Controller Type" tw="控制器類型"/>
+			<item name="work_mode" cn="工作模式" en="Work Mode" tw="工作模式"/>
+			<item name="normal_mode" cn="正常模式" en="Normal Mode" tw="正常模式"/>
+			<item name="listen_only_mode" cn="只听模式" en="Listen Only Mode" tw="只聽模式"/>
+			<item name="clock" cn="控制器时钟" en="Clock" tw="控制器時鐘"/>
+			<item name="cmt_clock" cn="单位MHz" en="Unit:MHz" tw="單位MHz"/>
+			<item name="custom_baudrate_enable" cn="自定义波特率使能" en="Custom Baudrate Enable" tw="自定義波特率使能"/>
+			<item name="custom_baudrate" cn="自定义波特率" en="Custom Baudrate" tw="自定義波特率"/>
+			<item name="cmt_custom_baudrate" cn="复制波特率计算器的值到编辑框中" en="Copy form baudcal in ZCANPro" tw="複製波特率波計算器的值到編輯框中"/>
+			<item name="nominal_baudrate" cn="仲裁域波特率" en="Nominal Baudrate" tw="仲裁域波特率"/>
+			<item name="data_baudrate" cn="数据域波特率" en="Data Baudrate" tw="數據域波特率"/>
+			<item name="resistance" cn="终端电阻" en="Resistance" tw="終端電阻"/>
+			<item name="close" cn="关闭" en="Close" tw="關閉"/>
+			<item name="open" cn="打开" en="Open" tw="打開"/>
+			<item name="filter" cn="滤波" en="Filter" tw="濾波"/>
+			<item name="timer_tx" cn="定时发送" en="Timer Transmit" tw="定時發送"/>
+			<item name="min_interval" cn="报文发送间隔(ms)" en="Min Interval Of Two Frames(ms)" tw="報文發送間隔(ms)"/>
+			<item name="send_buf" cn="发送缓冲区" en="Send Buffer" tw="發送緩衝區"/>
+			<item name="cmt_send_buf" cn="10~1000, 单位:10帧, 即输入10则发送缓冲区为100帧" en="Range: 10~1000, Unit: 10 Frames, if input 10, means 100" tw="10~1000，單位：10幀，即輸入10則發送緩衝區為100幀"/>
+			<item name="send_buf_strategy" cn="发送缓冲策略" en="Send Buffer Strategy" tw="發送緩衝區策略"/>
+			<item name="discard_new" cn="满时丢弃新数据" en="Discard New Data When Buffer Is Full" tw="滿時丟棄新數據"/>
+			<item name="discard_old" cn="满时丢弃旧数据" en="Discard Old Data When Buffer Is Full" tw="滿時丟棄舊數據"/>
+			<item name="blue" cn="蓝牙设置" en="Blue Configuration" tw="藍牙設置"/>
+			<item name="convert" cn="数据转发配置" en="Convert Setting" tw="數據轉發配置"/>
+			<item name="scan_close" cn="关闭扫描" en="Close Scan" tw="關閉掃描"/>
+			<item name="scan_start" cn="启动扫描" en="Start Scan" tw="启动掃描"/>
+			<item name="broadcast_close" cn="关闭广播" en="Close Broadcast" tw="關閉廣播"/>
+			<item name="broadcast_start" cn="启动广播" en="Start Broadcast" tw="启动廣播"/>
+			<item name="blue_password" cn="静态配对码" en="Blue Password" tw="靜態配對碼"/>
+			<item name="cmt_blue_password" cn="此密码是蓝牙设备工作在主机模式时设定的静态配对码,由6位数字组成" en="This password is a static pairing code which is set when the device works in the master mode,consists of 6 digits" tw="此密碼是藍牙設備工作在主機模式時設定的靜態配對碼,由6位數字組成"/>
+			<item name="blue_password_rule_cmt" cn="请输入6位数字" en="please input 6 digits" tw="請輸入6位數字"/>
+			<item name="broadcast_interval" cn="广播间隔(ms)" en="Broadcast Interval" tw="廣播間隔"/>
+			<item name="cmt_broadcast_interval" cn="单位:ms" en="Unit:ms" tw="單位:ms"/>
+			<item name="scan_interval" cn="扫描间隔" en="Scan Interval" tw="掃描間隔"/>
+			<item name="cmt_scan_interval" cn="范围: 10~10000毫秒" en="Range:10~10000 ms" tw="範圍:10~10000毫秒"/>
+			<item name="tx_power" cn="发射功率(dbm)" en="Transmit Power" tw="發射功率"/>
+			<item name="scan_devs_mode" cn="扫描过滤方式" en="Scan Mode" tw="掃描過濾方式"/>
+			<item name="cmt_scan_devs_mode" cn="0:默认方式, 不进行过滤, 直接扫描当前网络中可以检测到的蓝牙设备;\n1:按信号强度方式过滤, 只扫描信号强度值大于设定值的设备;\n2:按关键字过滤, 只扫描名称包含关键字的设备" en="0:Default mode, no filter;\n1:Greater than the rssi value;\n2:Contains the key name" tw="0:默認方式, 不進行過濾, 直接掃描當前網絡中可以檢測到的藍牙設備;\n1:按信號強度方式過濾, 只掃描信號強度大於設定值的設備;\n2:按關鍵字過濾, 只掃描名稱包含關鍵字的設備"/>
+			<item name="scan_rssi" cn="信号强度过滤" en="Rssi Filter" tw="信號強度過濾"/>
+			<item name="cmt_scan_rssi" cn="扫描设备时只扫描信号强度大于该值的蓝牙设备, 范围:-99~99dbm" en="Only scan the blue devices whose rssi is greater than this value, range:99~99 dbm" tw="掃描設備時只掃描信號強度大於該值的藍牙設備, 範圍:-99~99 dbm"/>
+			<item name="scan_key" cn="关键字过滤" en="Key Filter" tw="關鍵字過濾"/>
+			<item name="cmt_scan_key" cn="扫描设备时只扫描名称包含关键字的蓝牙设备,长度0~8, 不支持中文,不填表示不过滤" en="Only scan the blue devices whose name contains the key, length range: 0~8，chinese characters are not supported, disable if empty" tw="掃描設備時只掃描名稱包含關鍵字的藍牙設備,長度為0~8, 不支持中文,為空表示不過濾"/>
+			<item name="scan_key_rule_cmt" cn="请输入过滤关键字，长度0~8" en="please input filter key,lenth 0~8" tw="請輸入過濾關鍵字，長度0~8"/>
+			<item name="device_scanned_table" cn="设备列表" en="Device List" tw="設備列表"/>
+			<item name="master_device_list" cn="已连接的主机信息列表" en="The information of the masters connected" tw="已連接的主機信息列表"/>
+			<item name="dev_supported_list" cn="允许连接的设备列表" en="The list of devices supported" tw="允許連接的設備列表"/>
+			<item name="baudrate" cn="串口波特率" en="Serial Baudrate" tw="串口波特率"/>
+			<item name="cmt_baudrate" cn="常用取值为: 9600,15200,1280000,230400" en="Usual values:9600,15200,1280000,230400" tw="常用取值為:9600,15200,1280000,230400"/>
+			<item name="stopbits" cn="串口停止位" en="Stop Bit" tw="串口停止位"/>
+			<item name="cmt_stopbits" cn="常用取值为:1,2" en="Usual values:1,2" tw="常用取值為:1,2"/>
+			<item name="parity" cn="奇偶校验位" en="Parity" tw="奇偶校驗位"/>
+			<item name="parity_none" cn="无(常用)" en="None" tw="無(常用)"/>
+			<item name="parity_odd" cn="奇校验" en="Odd Parity" tw="奇校驗"/>
+			<item name="parity_even" cn="偶校验" en="Even Parity" tw="偶校驗"/>
+			<item name="scan_enable" cn="扫描使能" en="Scan Enable" tw="掃描使能"/>
+			<item name="broadcast_enable" cn="广播使能" en="Broadcast Enable" tw="廣播使能"/>
+			<item name="blue_mac" cn="蓝牙MAC地址" en="Blue MAC" tw="藍牙MAC地址"/>
+			<item name="serial" cn="串口配置" en="Serial Setting" tw="串口配置"/>
+			<item name="databitlen" cn="数据位" en="Data Bit" tw="數據位"/>
+			<item name="self_tx_rx" cn="自发自收" en="Tx Rx Self" tw="自發自收"/>
+			<item name="scan_mode_general" cn="不过滤" en="No Filter" tw="不過濾"/>
+			<item name="scan_mode_rssi" cn="按信号强度过滤" en="Greater than the rssi value" tw="按信號強度過濾"/>
+			<item name="scan_mode_key" cn="按关键字过滤" en="Contains the key name" tw="按關鍵字過濾"/>
+			<item name="convert_direction_ctrl1" cn="方向控制1" en="Direction Control 1" tw="方向控制1"/>
+			<item name="mode_bothway" cn="双向模式" en="Bothway Mode" tw="雙向模式"/>
+			<item name="mode_rx" cn="蓝牙->CAN" en="Blue->CAN" tw="藍牙->CAN"/>
+			<item name="mode_tx" cn="CAN->蓝牙" en="CAN->Blue" tw="CAN->藍牙"/>
+			<item name="convert_packet_cnt1" cn="分包帧数1" en="Packet Count 1" tw="分包幀數1"/>
+			<item name="convert_packet_tmo1" cn="分包间隔1" en="Packet Timeout 1" tw="分包間隔1"/>
+			<item name="convert_mode" cn="转发模式" en="Convert Mode" tw="轉發模式"/>
+			<item name="convert_by_chn" cn="按通道转发" en="Convert By channel" tw="按通道轉發"/>
+			<item name="convert_by_copy" cn="拷贝转发" en="Convert by copy" tw="拷貝轉發"/>
+			<item name="convert_retry1" cn="失败重发次数1" en="Retry Time 1" tw="失敗重發次數1"/>
+			<item name="convert_direction_ctrl2" cn="方向控制2" en="Direction Control 2" tw="方向控制2"/>
+			<item name="convert_packet_cnt2" cn="分包帧数2" en="Packet Count 2" tw="分包幀數2"/>
+			<item name="convert_packet_tmo2" cn="分包间隔2" en="Packet Timeout 2" tw="分包間隔2"/>
+			<item name="convert_recv_buf_mode" cn="接收缓冲区处理" en="Recv Buffer Mode" tw="接收緩衝區處理"/>
+			<item name="cmt_convert_recv_buf_mode" cn="蓝牙连接建立时CAN接收缓冲区处理" en="Recv Buffer Mode" tw="接收緩衝區處理"/>
+			<item name="not_clear_when_connect" cn="连接不清空" en="Not Clear When Connect" tw="連接不清空"/>
+			<item name="clear_when_connect" cn="连接清空接收缓冲区" en="Clear When Connect" tw="連接清空接收缓冲区"/>
+			<item name="convert_retry2" cn="失败重发次数2" en="Retry Time 2" tw="失敗重發次數2"/>
+			<item name="cmt_direction_ctrl" cn="0:双向传输, 蓝牙->CAN, CAN->蓝牙; 1:只能蓝牙->CAN; 2:只能CAN->蓝牙" en="0:Bothway Mode, Blue->CAN, CAN->Blue; 1:Only Blue->CAN; 2:Only CAN->Blue" tw="0:雙向傳輸, 藍牙->CAN, CAN->藍牙; 1:只能藍牙->CAN; 2:只能CAN->藍牙"/>
+			<item name="cmt_convert_mode" cn="0:按通道转发，即蓝牙收到数据后按通道转号转发给相应的CAN口; 1:拷贝转发，即蓝牙收到的数据，拷贝转发到两个CAN口，不关心通道号;" en="0: Convert by channel, that is, after Bluetooth receives the data, it is forwarded to the corresponding CAN port according to the channel number; 1: Copy and convert, that is, the data received by Bluetooth is copied and forwarded to two CAN ports, regardless of the channel number;" tw="0:按通道轉發，即藍牙收到數據後按通道轉號轉發給相應的CAN口; 1:拷貝轉發，即藍牙收到的數據，拷貝轉發到兩個CAN口，不關心通道號;"/>
+			<item name="cmt_convert_packet_cnt" cn="接收CAN帧个数达到该值时(间隔小于分包间隔)封装成一个蓝牙包, 范围:1~100" en="Make a blue packet when CAN frames count reachs this value(interval less than packet timeout), range:1~100" tw="接收CAN幀個數達到該值時(間隔小於分包間隔)封裝成一個藍牙包, 範圍:1~100"/>
+			<item name="cmt_convert_packet_tmo" cn="达到超时时间则封装一个蓝牙包, 范围:1~254ms" en="Make a blue packet when interva reachs this time, range:1~254ms" tw="達到超時時間則封裝一個藍牙包, 範圍:1~254ms"/>
+			<item name="cmt_convert_retry" cn="蓝牙包发送失败后重发次数" en="Retry time when a blue packet failed to transmit" tw="藍牙包發送失敗后重發次數"/>
+			<item name="can_enable" cn="CAN口使能" en="CAN Enable" tw="CAN口使能"/>
+			<item name="close_can" cn="关闭CAN口" en="Close CAN" tw="關閉CAN口"/>
+			<item name="open_can" cn="使能CAN口" en="Open CAN" tw="使能CAN口"/>
+			<item name="controller_type" cn="控制器类型" en="Controller Type" tw="控制器類型"/>
+			<item name="canfd_std" cn="CANFD标准" en="CANFD Standard" tw="CANFD標準"/>
+		</string>
+</devinfo>

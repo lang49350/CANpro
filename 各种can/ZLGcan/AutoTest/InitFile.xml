@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsetup title="New Test Setup">
+	<description/>
+	<header>
+		<info>
+			<category>Module Name</category>
+			<value/>
+		</info>
+		<info>
+			<category>version</category>
+			<value>1.0</value>
+		</info>
+		<info>
+			<category>DBC FiLe Path</category>
+			<value></value>
+		</info>
+	</header>
+	<list_of_test_cases/>
+</testsetup>
