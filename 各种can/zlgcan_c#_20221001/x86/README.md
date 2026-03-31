@@ -1,8 +1,0 @@
-﻿####支持的设备
-    - PCIECANFD-100U
-    - PCIECANFD-200U
-    - PCIECANFD-400U
-    - USBCANFD-200U
-    - USBCANFD-100U
-    - USBCANFD-MINI
-    - CLOUD
